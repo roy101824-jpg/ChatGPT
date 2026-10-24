@@ -1,0 +1,678 @@
+[
+  {
+    "id": "powerscore",
+    "title": "PowerScore • Repeat Offenders",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 699,
+    "extractedWordCount": 699,
+    "note": "All 700 labeled entries extracted, representing 699 unique headwords (obstreperous appears twice). Practice quiz sections are excluded.",
+    "pages": 54,
+    "filename": "PowerScore vocab list.pdf"
+  },
+  {
+    "id": "master",
+    "title": "GRE Master Wordlist",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 1535,
+    "extractedWordCount": 1535,
+    "note": "All 1,535 labeled headwords extracted with synonym-based definitions and usage sentences.",
+    "pages": 326,
+    "filename": "GRE Master Word List.pdf"
+  },
+  {
+    "id": "barron3500",
+    "title": "Barron’s 3,500 • SAT I word list",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 3368,
+    "extractedWordCount": 3368,
+    "note": "File title says 3,500; internal title identifies a SAT I list. Entries and alphabetical index are combined. Hindi glosses are omitted. Unclear entries remain headword-only.",
+    "pages": 156,
+    "filename": "Barron 3500 Word List.pdf"
+  },
+  {
+    "id": "high333",
+    "title": "333 High-Frequency Words",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 332,
+    "extractedWordCount": 332,
+    "note": "Practice sheet contains headwords only. Meanings are matched from other supplied word lists where available. All 333 rows are present; strut appears twice, leaving 332 unique words.",
+    "filename": "Printable GRE English Vocabulary_ 333 High Frequency Words List.docx"
+  },
+  {
+    "id": "gregmat",
+    "title": "GregMat practice sheet",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 1045,
+    "extractedWordCount": 1045,
+    "note": "Practice sheet contains headwords only. Meanings are matched from other supplied word lists where available. All 1,050 rows are present, representing 1,045 unique words.",
+    "filename": "GREGMAT WORD LIST FOR PRACTICE.docx"
+  },
+  {
+    "id": "additional",
+    "title": "Additional Words sheet",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 1051,
+    "extractedWordCount": 1051,
+    "note": "Spreadsheet has 1,050 rows with no definitions; one malformed cell combines 31 words and is split during import. It substantially overlaps the GregMat practice sheet.",
+    "filename": "Additional Words Sheet.xlsx"
+  },
+  {
+    "id": "barron-mnemonics",
+    "title": "Barron’s Mnemonics",
+    "kind": "vocabulary",
+    "status": "partial",
+    "wordCount": 2931,
+    "extractedWordCount": 2931,
+    "note": "Definitions extracted from numbered headings, Word/Meaning labels, bullets, grid tables, and selected bold headings. Inconsistent formatting may leave missing entries. Supplied PDF stops at “vogue”; unreviewed mnemonics are omitted.",
+    "pages": 203,
+    "filename": "Barrons Mnemonics Word List.pdf"
+  },
+  {
+    "id": "essential-500",
+    "title": "Manhattan Prep 500 Essential Words",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 500,
+    "extractedWordCount": 500,
+    "note": "All 500 front/back cards extracted. Alternate senses are retained within the supplied definitions; related-word discussions are not separate cards.",
+    "pages": 1003,
+    "filename": "500 Essential Words_ GRE Vocabulary Flash Cards (Manhattan Prep GRE Strategy Guides).pdf"
+  },
+  {
+    "id": "vocab-capacity",
+    "title": "GRE Vocab Capacity 2017",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 1301,
+    "extractedWordCount": 1301,
+    "note": "Main vocabulary entries extracted; word-root appendix excluded. Adult/crude memory stories and mnemonic prompts are intentionally not imported. Corrected source typos meteorological/weather patterns and epitome part of speech. Source variants retained.",
+    "pages": 379,
+    "filename": "GRE Vocab Capacity 2017_ Over 1,300 Powerful Memory Tricks and Mnemonics.pdf"
+  },
+  {
+    "id": "power-vocab",
+    "title": "GRE Power Vocab",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 819,
+    "extractedWordCount": 819,
+    "note": "Structured dictionary-style headwords extracted using font and line spacing, including discipline-specific vocabulary. Root lists, ordinary passage words, and answer-choice-only words are not treated as defined headwords. First supplied usage paragraph retained where detectable.",
+    "pages": 559,
+    "filename": "GRE Power Vocab.pdf"
+  },
+  {
+    "id": "contextual",
+    "title": "GRE Contextual Vocabulary",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 139,
+    "extractedWordCount": 139,
+    "note": "All 24 explicitly labelled definition blocks extracted. Inflected forms are retained. Definitions joined across line breaks; the inline onerous definition is split from inept. Exercise-only words without an explicit definition are excluded.",
+    "pages": 308,
+    "filename": "GRE Contextual Vocabulary.pdf"
+  },
+  {
+    "id": "flash-review",
+    "title": "GRE Vocabulary Flash Review",
+    "kind": "vocabulary",
+    "status": "imported",
+    "wordCount": 600,
+    "extractedWordCount": 600,
+    "note": "All 600 headwords extracted; first sense and supplied usage retained. Front/back mapping checked against highlighted usage forms; corrected reversed errant/eschew ordering and misplaced homogeneous definition in original source.",
+    "pages": 430,
+    "filename": "GRE Vocabulary Flash Review.pdf"
+  },
+  {
+    "id": "file_0000000002fc81fa9aa105cb9e7fc8c2",
+    "title": "Official GRE Super Power Pack, Second Edition.pdf",
+    "kind": "reference",
+    "status": "unavailable",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Not imported: file exceeds the 32 MiB transfer limit. No content was inspected."
+  },
+  {
+    "id": "file_00000000e1b481faaf717af33624a402",
+    "title": "The Official Guide to the GRE General Test.pdf",
+    "kind": "reference",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format. Reference edition may use an older test structure; use the current format shown in the app.",
+    "pages": 517
+  },
+  {
+    "id": "file_000000006b6481faac6cf0ad33421847",
+    "title": "GRE-Big-Book-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types.",
+    "pages": 1089
+  },
+  {
+    "id": "file_00000000127881faa63a4c06b51f8a58",
+    "title": "GRE-CAT-Answers-To-The-Real-Essay.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 336
+  },
+  {
+    "id": "file_00000000516c820b9d7404e313f03e95",
+    "title": "GREIssueEssaySample.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 110
+  },
+  {
+    "id": "file_00000000d488820b9a45df5de7ca9151",
+    "title": "GRE Analytical Writing.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 341
+  },
+  {
+    "id": "file_00000000f74c81fabe752ca9cfad73ae",
+    "title": "GRE Argument Essays.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy Argument task; the current Analytical Writing section uses one Issue essay.",
+    "pages": 40
+  },
+  {
+    "id": "file_000000006e94820bbb4d8a354237dedc",
+    "title": "Model_Essays.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 75
+  },
+  {
+    "id": "file_00000000a72c81fa936b7617c4f3b0ce",
+    "title": "GRE AWA.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 282
+  },
+  {
+    "id": "file_000000001a3881fa9ec420e162f53cbd",
+    "title": "GRE Issue Essays.pdf",
+    "kind": "writing",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 308
+  },
+  {
+    "id": "file_00000000694081fa99af5bf113f9c5dd",
+    "title": "GRE Reading Comprehension_ Detailed Solutions to 325 Questions (Test Prep Series).pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 377
+  },
+  {
+    "id": "file_00000000c99081fa8971a5854a4bf201",
+    "title": "GRE Verbal Workbook.pdf",
+    "kind": "reference",
+    "status": "indexed",
+    "wordCount": 897,
+    "extractedWordCount": 1416,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format. Reference edition may use an older test structure; use the current format shown in the app. 897 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 866
+  },
+  {
+    "id": "file_000000003534820b88f07b9ac0a0aeed",
+    "title": "GRE Text Completion and Sentence Equivalence Practice Questions (Test Prep Series Book 16).pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format.",
+    "pages": 241
+  },
+  {
+    "id": "file_00000000cf6481fabf9337c8665a52e3",
+    "title": "Educational Testing Service - GRE General Test Practice    - libgen.lc.pdf",
+    "kind": "reference",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains older writing preparation; any Argument task is legacy and not current GRE format. Reference edition may use an older test structure; use the current format shown in the app.",
+    "pages": 80
+  },
+  {
+    "id": "file_000000007530820b970948451ec87703",
+    "title": "500 GRE Math Flash Cards.pdf",
+    "kind": "quant",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Quantitative reference; excluded from the vocabulary word bank.",
+    "pages": 1003
+  },
+  {
+    "id": "file_000000002e1081fabd07f5dbcd568c9a",
+    "title": "Conquering GRE Verbal Reasoning and Analytical Writing.pdf",
+    "kind": "reference",
+    "status": "unavailable",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Not imported: file exceeds the 32 MiB transfer limit. No content was inspected."
+  },
+  {
+    "id": "file_000000005550820b807b6b50392a39bc",
+    "title": "Cracking the GRE Premium Edition with 6 Practice Tests, 2020.pdf",
+    "kind": "reference",
+    "status": "unavailable",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Not imported: file exceeds the 32 MiB transfer limit. No content was inspected."
+  },
+  {
+    "id": "file_000000001e1c820b86e1fb04a538f253",
+    "title": "TEST 11-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 56,
+    "extractedWordCount": 212,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 56 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000087e081fa977fe2d3bf129033",
+    "title": "TEST 10-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 70,
+    "extractedWordCount": 210,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 70 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000a91481fa97b25c515cdd854c",
+    "title": "TEST 11-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 71,
+    "extractedWordCount": 231,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 71 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000006f481faba0be40607ba7db8",
+    "title": "TEST 13-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 69,
+    "extractedWordCount": 216,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 69 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000007878820bb907ab17ae5f6742",
+    "title": "TEST 12-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 78,
+    "extractedWordCount": 204,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 78 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000090c881fa8ec927a3c40bed99",
+    "title": "TEST 13-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 62,
+    "extractedWordCount": 184,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 62 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000aea481faaacbf227cbc7ad7a",
+    "title": "TEST 15-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 62,
+    "extractedWordCount": 190,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 62 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000f89481fabeeab8d411e81a75",
+    "title": "TEST 14-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 61,
+    "extractedWordCount": 192,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 61 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 7
+  },
+  {
+    "id": "file_00000000cef881fab848455e1a62c49b",
+    "title": "TEST 14-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 72,
+    "extractedWordCount": 206,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 72 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 8
+  },
+  {
+    "id": "file_00000000d8bc81fabcadd959759d9b6b",
+    "title": "TEST 15-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 73,
+    "extractedWordCount": 218,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 73 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000034a0820b904c4d13b9ad457a",
+    "title": "TEST 16-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 62,
+    "extractedWordCount": 198,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 62 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 7
+  },
+  {
+    "id": "file_000000003ce0820b9f37e139fa4ec06f",
+    "title": "TEST 16-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 76,
+    "extractedWordCount": 211,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 76 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 7
+  },
+  {
+    "id": "file_00000000bca8820b9be7dcb08788349d",
+    "title": "TEST 17-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 60,
+    "extractedWordCount": 190,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 60 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000001c8c820ba58995123af5c084",
+    "title": "TEST 17-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 71,
+    "extractedWordCount": 215,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 71 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000006bac820b8ba0835c5a472b76",
+    "title": "TEST 18-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 54,
+    "extractedWordCount": 203,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 54 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 8
+  },
+  {
+    "id": "file_000000004fe481fabf86c63e94260501",
+    "title": "TEST 18-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 73,
+    "extractedWordCount": 223,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 73 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 7
+  },
+  {
+    "id": "file_00000000df8481fa9de07210f35ad99e",
+    "title": "TEST 19-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 74,
+    "extractedWordCount": 227,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 74 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000009dfc820bb5a3e79e1bdd681e",
+    "title": "TEST 19-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 79,
+    "extractedWordCount": 213,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 79 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000cb4c81fabe2f0be9db0f2180",
+    "title": "answer key.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 0,
+    "extractedWordCount": 0,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Contains 1,406 answer entries for 37 sections; Test 12 Section 2 is absent. Answer-key inventory only; not automatically linked to question IDs.",
+    "pages": 19
+  },
+  {
+    "id": "file_000000002c3c81fa87546b7a8b6fc9aa",
+    "title": "TEST 01-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 53,
+    "extractedWordCount": 201,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 53 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000002424820b8de57158abe6a02e",
+    "title": "TEST 01-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 75,
+    "extractedWordCount": 207,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 75 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000de20820babbe12ae0a0a231d",
+    "title": "TEST 02-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 72,
+    "extractedWordCount": 205,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 72 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000007628820ba1db7aa0ad3b639d",
+    "title": "TEST 02-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 57,
+    "extractedWordCount": 220,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 57 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 8
+  },
+  {
+    "id": "file_000000002cf081faaf39f38edff9f4e5",
+    "title": "TEST 03-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 48,
+    "extractedWordCount": 197,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 48 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000007f5881fa8355ccefae698744",
+    "title": "TEST 03-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 60,
+    "extractedWordCount": 206,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 60 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000001481fa855c216d61252000",
+    "title": "TEST 04-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 78,
+    "extractedWordCount": 211,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 78 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000c49c820b94fb9d1058db1779",
+    "title": "TEST 04-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 69,
+    "extractedWordCount": 207,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 69 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000e6c881fa8d20689c1125eb25",
+    "title": "TEST 05-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 69,
+    "extractedWordCount": 216,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 69 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000002a081fa9e457db07d3fe1f9",
+    "title": "TEST 05-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 58,
+    "extractedWordCount": 192,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 58 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000003f8c81fa99ec8f6024c80b73",
+    "title": "TEST 06-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 78,
+    "extractedWordCount": 210,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 78 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000082cc81fa87997962de5094fd",
+    "title": "TEST 06-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 54,
+    "extractedWordCount": 206,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 54 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000009ec881fabb537f38773071c3",
+    "title": "TEST 07-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 70,
+    "extractedWordCount": 202,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 70 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000004fd8820b80059d6055e46aef",
+    "title": "TEST 07-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 65,
+    "extractedWordCount": 213,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 65 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000033a4820bbe3e5b66252ed106",
+    "title": "TEST 08-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 74,
+    "extractedWordCount": 205,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 74 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000007b24820ba329b7b9f0e7bc1a",
+    "title": "TEST 08-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 54,
+    "extractedWordCount": 207,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 54 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_00000000c99081faaa58d81b2659c3c6",
+    "title": "TEST 09-2.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 61,
+    "extractedWordCount": 207,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 61 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_0000000095d0820bbead0fb120ee2dbd",
+    "title": "TEST 09-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 65,
+    "extractedWordCount": 187,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 65 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  },
+  {
+    "id": "file_000000002eb481fa8ea8562fd679d6d6",
+    "title": "TEST 10-1.pdf",
+    "kind": "practice",
+    "status": "indexed",
+    "wordCount": 51,
+    "extractedWordCount": 199,
+    "note": "Text extracted for source inventory; original pages and questions are not bundled in the app. Legacy GRE material: analogies and antonyms are not current question types. 51 vocabulary headwords link to this resource in the app; extracted occurrence-only forms are linked only when they match an existing library word.",
+    "pages": 6
+  }
+]

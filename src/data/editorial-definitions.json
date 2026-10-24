@@ -1,0 +1,1800 @@
+[
+  {
+    "word": "abounds",
+    "definition": "Exists in great numbers or amounts.",
+    "pos": "verb",
+    "example": "Marine life abounds in the protected bay.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "abridged",
+    "definition": "Shortened by leaving out parts while preserving the main content.",
+    "pos": "adjective",
+    "example": "The abridged biography covers her career in two hundred pages instead of eight hundred.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "abstracted",
+    "definition": "So absorbed in thought that one pays little attention to the surroundings.",
+    "pos": "adjective",
+    "example": "With an abstracted expression, Ravi stirred his empty cup while considering the proof.",
+    "confidence": "reviewed",
+    "note": "Absent-minded adjective sense checked against Cambridge: https://dictionary.cambridge.org/us/dictionary/english/abstracted . Definition and example are original Wordtrail editorial wording."
+  },
+  {
+    "word": "acolyte",
+    "definition": "A devoted follower or assistant, especially of an influential person.",
+    "pos": "noun",
+    "example": "The philosopher's acolyte defended every argument his mentor published.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "adjoin",
+    "definition": "To be immediately next to or share a boundary with.",
+    "pos": "verb",
+    "example": "Two smaller laboratories adjoin the main research hall.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "adulterated",
+    "definition": "Made less pure by adding inferior, unnecessary, or harmful material.",
+    "pos": "adjective",
+    "example": "Tests revealed that the adulterated oil contained cheaper substitutes.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "agitated",
+    "definition": "Troubled, restless, or emotionally upset.",
+    "pos": "adjective",
+    "example": "The normally calm witness became agitated when the missing letter was mentioned.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "allusively",
+    "definition": "By referring indirectly to something rather than stating it openly.",
+    "pos": "adverb",
+    "example": "The poet writes allusively about the war, invoking ruined gardens without naming a battle.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "alluvial",
+    "definition": "Relating to sediment carried and deposited by flowing water.",
+    "pos": "adjective",
+    "example": "Repeated floods left rich alluvial soil across the valley floor.",
+    "confidence": "reviewed",
+    "note": "Sense checked against USDA Forest Service glossary: https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs033.pdf . Definition and example are original Wordtrail editorial wording."
+  },
+  {
+    "word": "apprehensions",
+    "definition": "Anxious expectations or fears about what may happen.",
+    "pos": "plural noun",
+    "example": "Her apprehensions about the interview eased after the panel's friendly greeting.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "appropriated",
+    "definition": "Took something for one's own use, often without permission.",
+    "pos": "verb",
+    "example": "The director appropriated his assistant's idea and presented it as his own.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "apt",
+    "definition": "Well suited to a particular situation or purpose.",
+    "pos": "adjective",
+    "example": "Calling the tangled negotiations a maze was an apt description.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "arresting",
+    "definition": "Striking enough to seize and hold attention.",
+    "pos": "adjective",
+    "example": "An arresting photograph of the empty stadium stopped visitors at the gallery entrance.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ascertained",
+    "definition": "Found out or established with sufficient certainty.",
+    "pos": "verb",
+    "example": "The investigators ascertained the train's departure time from several independent records.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "assailed",
+    "definition": "Attacked forcefully, physically or through criticism.",
+    "pos": "verb",
+    "example": "Reviewers assailed the report for relying on evidence it never disclosed.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "assertive",
+    "definition": "Ready to express one's views or needs confidently and directly.",
+    "pos": "adjective",
+    "example": "Her assertive response made her objections clear without insulting her colleagues.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "aviary",
+    "definition": "A large enclosure in which birds are kept.",
+    "pos": "noun",
+    "example": "Visitors watched parrots fly between branches inside the spacious aviary.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "banish",
+    "definition": "To send away or exclude from a place, often as punishment.",
+    "pos": "verb",
+    "example": "The ruler threatened to banish anyone who openly challenged his authority.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "belies",
+    "definition": "Gives a false impression of or contradicts an underlying reality.",
+    "pos": "verb",
+    "example": "The pianist's relaxed smile belies the intense concentration required by the difficult piece.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "bridle",
+    "definition": "To react with anger or resentment to an insult or restriction.",
+    "pos": "verb",
+    "example": "Experienced researchers may bridle at the suggestion that they need constant supervision.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "burgeoned",
+    "definition": "Grew or developed rapidly.",
+    "pos": "verb",
+    "example": "Interest in the archive burgeoned after the discovery of the lost letters.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "burnished",
+    "definition": "Polished to a shine; figuratively, made more impressive or reputable.",
+    "pos": "verb",
+    "example": "Years of patient craftsmanship burnished the cabinetmaker's reputation.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "buttressed",
+    "definition": "Strengthened or supported, either physically or with evidence.",
+    "pos": "verb",
+    "example": "Newly discovered records buttressed the historian's account of the migration.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "cajoled",
+    "definition": "Persuaded through patient coaxing or flattering appeals.",
+    "pos": "verb",
+    "example": "Lena cajoled her reluctant brother into joining the choir by praising his singing.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "calumnies",
+    "definition": "False, damaging statements about someone's character or reputation.",
+    "pos": "plural noun",
+    "example": "The pamphlet's calumnies accused the honest treasurer of theft without any evidence.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "cataclysmic",
+    "definition": "Causing enormous destruction or a sudden, far-reaching upheaval.",
+    "pos": "adjective",
+    "example": "The cataclysmic eruption buried entire settlements beneath ash.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ceased",
+    "definition": "Stopped happening or came to an end.",
+    "pos": "verb",
+    "example": "The machinery ceased operating when the power supply failed.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "chary of",
+    "definition": "Cautious about or reluctant to trust or undertake something.",
+    "pos": "adjective phrase",
+    "example": "After two failed partnerships, the studio was chary of another joint venture.",
+    "confidence": "reviewed",
+    "note": "Sense checked against Cambridge: https://dictionary.cambridge.org/us/dictionary/english/chary . Definition and example are original Wordtrail editorial wording."
+  },
+  {
+    "word": "cherish",
+    "definition": "To value deeply and treat with affection or care.",
+    "pos": "verb",
+    "example": "She continued to cherish the letters her grandfather had written during her childhood.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "cloak",
+    "definition": "To hide or disguise something.",
+    "pos": "verb",
+    "example": "The company tried to cloak its financial losses in optimistic language.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "coagulated",
+    "definition": "Changed from a liquid into a thicker, clotted, or partly solid state.",
+    "pos": "verb",
+    "example": "After the rennet was added, the milk coagulated into curds.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "coining",
+    "definition": "Inventing or introducing a new word or expression.",
+    "pos": "verb",
+    "example": "The researcher is credited with coining a term that is now common in the field.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "coltish",
+    "definition": "Lively, playful, and sometimes awkward in a youthful way.",
+    "pos": "adjective",
+    "example": "The actor brought a coltish energy to the role, bounding across the stage.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "commence",
+    "definition": "To begin or start.",
+    "pos": "verb",
+    "example": "Construction will commence once the survey is complete.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "competent",
+    "definition": "Having the ability and knowledge needed to perform adequately.",
+    "pos": "adjective",
+    "example": "A competent editor can identify contradictions as well as grammatical mistakes.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "comply",
+    "definition": "To act according to a request, rule, or requirement.",
+    "pos": "verb",
+    "example": "All entrants must comply with the competition's submission rules.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "confine",
+    "definition": "To restrict someone or something within particular limits.",
+    "pos": "verb",
+    "example": "Please confine your remarks to the evidence presented at this hearing.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "consanguineous",
+    "definition": "Related by blood through a shared ancestor.",
+    "pos": "adjective",
+    "example": "The genealogist established that the two apparently unrelated families were consanguineous.",
+    "confidence": "reviewed",
+    "note": "Sense checked against American Heritage: https://www.ahdictionary.com/word/search.html?q=consanguineous . Definition and example are original Wordtrail editorial wording."
+  },
+  {
+    "word": "conspire",
+    "definition": "To make a secret plan with others, especially for a wrongful purpose.",
+    "pos": "verb",
+    "example": "Several officials were accused of agreeing to conspire against the elected council.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "construed",
+    "definition": "Interpreted or understood in a particular way.",
+    "pos": "verb",
+    "example": "Her silence was construed as approval, although she had not yet formed an opinion.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "convalescent",
+    "definition": "Recovering health and strength after illness or injury.",
+    "pos": "adjective",
+    "example": "The convalescent patient gradually resumed short walks around the garden.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "correlate",
+    "definition": "To vary together in a systematic relationship, without necessarily causing one another.",
+    "pos": "verb",
+    "example": "In this survey, longer commutes correlate with lower reported satisfaction.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "coveted",
+    "definition": "Strongly desired, especially because it is valuable or prestigious.",
+    "pos": "adjective",
+    "example": "The young scientist won a coveted fellowship that would fund three years of research.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "credible",
+    "definition": "Believable or worthy of being taken seriously.",
+    "pos": "adjective",
+    "example": "The witness offered a credible account supported by the station's video recordings.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "curb",
+    "definition": "To restrain, control, or limit.",
+    "pos": "verb",
+    "example": "The city introduced quieter delivery hours to curb nighttime noise.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "dally",
+    "definition": "To waste time or delay through idle or trivial activity.",
+    "pos": "verb",
+    "example": "We cannot dally over lunch if we hope to catch the last ferry.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "daunting",
+    "definition": "So difficult or demanding that it discourages or intimidates.",
+    "pos": "adjective",
+    "example": "Cataloguing forty thousand unsorted letters seemed a daunting task.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "debilitating",
+    "definition": "Causing a serious loss of strength or ability to function.",
+    "pos": "adjective",
+    "example": "The debilitating heat left even experienced hikers unable to continue.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "deflected",
+    "definition": "Turned aside or redirected from an original course or target.",
+    "pos": "verb",
+    "example": "The spokesperson deflected questions about the delay by discussing next year's plans.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "deified",
+    "definition": "Treated as a god or admired with nearly unquestioning reverence.",
+    "pos": "verb",
+    "example": "Later generations deified the founder, overlooking every mistake in his record.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "deluding",
+    "definition": "Causing someone to believe something false.",
+    "pos": "verb",
+    "example": "By ignoring every warning, the manager was deluding herself about the project's chances.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "demurred",
+    "definition": "Raised an objection or expressed reluctance.",
+    "pos": "verb",
+    "example": "Asked to approve the expense without receipts, the treasurer demurred.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "deprecates",
+    "definition": "Expresses disapproval of or argues against something.",
+    "pos": "verb",
+    "example": "The essay deprecates the habit of judging a scholar solely by publication counts.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "despotic",
+    "definition": "Exercising absolute power in an oppressive or arbitrary way.",
+    "pos": "adjective",
+    "example": "The despotic governor imprisoned critics and ignored the assembly.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "dictate",
+    "definition": "To determine or impose what must be done.",
+    "pos": "verb",
+    "example": "Available materials will dictate the bridge's final design.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "diminutive",
+    "definition": "Unusually small in size.",
+    "pos": "adjective",
+    "example": "The diminutive cottage was almost hidden behind the towering hedges.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "discomfited",
+    "definition": "Made uneasy, embarrassed, or confused.",
+    "pos": "adjective",
+    "example": "The discomfited lecturer paused when a student exposed a contradiction in his argument.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "discounted",
+    "definition": "Treated as unimportant, unreliable, or unlikely to be true.",
+    "pos": "verb",
+    "example": "The committee discounted the rumor because no witness could confirm it.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "disdained",
+    "definition": "Regarded as beneath one's dignity or unworthy of respect.",
+    "pos": "verb",
+    "example": "The critic disdained popular fiction and refused to review the bestseller.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "disentangle",
+    "definition": "To separate things that are intertwined, confused, or complicated.",
+    "pos": "verb",
+    "example": "The audit attempted to disentangle personal expenses from legitimate business costs.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "dispense with",
+    "definition": "To do without something or stop requiring it.",
+    "pos": "verb phrase",
+    "example": "An electronic signature allowed the office to dispense with paper forms.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "distending",
+    "definition": "Swelling or stretching outward through pressure from within.",
+    "pos": "verb",
+    "example": "Air was distending the balloon until its surface became taut.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "distilling",
+    "definition": "Extracting the essential meaning or most important elements from something.",
+    "pos": "verb",
+    "example": "The editor spent weeks distilling the lengthy investigation into a clear five-page report.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "distorted",
+    "definition": "Altered so that the original shape, meaning, or truth is misrepresented.",
+    "pos": "adjective",
+    "example": "A distorted summary made the cautious findings sound like a confident prediction.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "distressed",
+    "definition": "Deeply troubled, upset, or anxious.",
+    "pos": "adjective",
+    "example": "The distressed owner searched every street after her dog disappeared.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "divorced",
+    "definition": "Separated or disconnected from something normally associated with it.",
+    "pos": "adjective",
+    "example": "A theory divorced from observable evidence is difficult to test.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "documentary",
+    "definition": "Based on or consisting of written records or other documents.",
+    "pos": "adjective",
+    "example": "Documentary evidence showed that the property had changed hands decades earlier.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "duped",
+    "definition": "Tricked into believing or doing something.",
+    "pos": "verb",
+    "example": "The collectors were duped into buying replicas advertised as ancient coins.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "dwindling",
+    "definition": "Gradually becoming smaller in number, size, or amount.",
+    "pos": "adjective",
+    "example": "With dwindling supplies, the expedition reduced its daily rations.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "elementary",
+    "definition": "Basic or introductory rather than advanced.",
+    "pos": "adjective",
+    "example": "The guide assumes only an elementary knowledge of statistics.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "elitist",
+    "definition": "Favoring the power or privileges of a select group considered superior.",
+    "pos": "adjective",
+    "example": "Critics called the admissions policy elitist because it favored a narrow circle of wealthy families.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "enchanted",
+    "definition": "Delighted or captivated by something appealing.",
+    "pos": "adjective",
+    "example": "The audience was enchanted by the storyteller's vivid descriptions of distant islands.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "encyclopedic",
+    "definition": "Extremely broad and detailed in its coverage or knowledge.",
+    "pos": "adjective",
+    "example": "Her encyclopedic knowledge of jazz extended from early recordings to obscure modern performers.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "endearing",
+    "definition": "Making someone or something easy to like or feel affection for.",
+    "pos": "adjective",
+    "example": "His endearing habit of remembering everyone's birthday made him a favorite colleague.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "engendered",
+    "definition": "Brought about or caused a feeling, condition, or result.",
+    "pos": "verb",
+    "example": "The unexplained delay engendered suspicion among the applicants.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "enthralled",
+    "definition": "Held someone's attention completely through fascination or delight.",
+    "pos": "verb",
+    "example": "The astronomer's account of distant galaxies enthralled the entire class.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "entrenched",
+    "definition": "Firmly established and difficult to change or remove.",
+    "pos": "adjective",
+    "example": "Entrenched habits persisted even after the office introduced new procedures.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ergonomic",
+    "definition": "Designed to fit human use with greater comfort, safety, or efficiency.",
+    "pos": "adjective",
+    "example": "The ergonomic handle allowed workers to grip the tool without bending their wrists awkwardly.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "escalate",
+    "definition": "To increase or become more intense, serious, or extensive.",
+    "pos": "verb",
+    "example": "A minor disagreement can escalate into a prolonged dispute if neither side listens.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "euphemisms",
+    "definition": "Mild or indirect expressions used in place of ones considered harsh or uncomfortable.",
+    "pos": "plural noun",
+    "example": "The memo used euphemisms such as 'workforce adjustment' instead of plainly mentioning layoffs.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "euphoric",
+    "definition": "Filled with unusually intense happiness or excitement.",
+    "pos": "adjective",
+    "example": "The team was euphoric after winning the championship in the final seconds.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "evade",
+    "definition": "To avoid or escape something, often through cleverness or indirect action.",
+    "pos": "verb",
+    "example": "The witness tried to evade the question by giving a long account of unrelated events.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "exasperation",
+    "definition": "Intense irritation or frustration, often after repeated difficulties.",
+    "pos": "noun",
+    "example": "After correcting the same error for the fifth time, the instructor sighed in exasperation.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "exploitative",
+    "definition": "Taking unfair advantage of someone or something for one's own benefit.",
+    "pos": "adjective",
+    "example": "The exploitative contract gave the publisher nearly all the profits while leaving the author unpaid.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "extravagant",
+    "definition": "Excessive or wasteful in spending, scale, or claims.",
+    "pos": "adjective",
+    "example": "The extravagant banquet exhausted funds intended to support the museum for a year.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "fabricating",
+    "definition": "Inventing false information or a deceptive account.",
+    "pos": "verb",
+    "example": "The researcher was dismissed for fabricating results instead of conducting the experiment.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "fashion",
+    "definition": "To shape or create something, often from available materials.",
+    "pos": "verb",
+    "example": "The team will fashion a temporary shelter from canvas and fallen branches.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "fawned over",
+    "definition": "Showed excessive admiration or flattering attention toward someone.",
+    "pos": "phrasal verb (past tense)",
+    "example": "The courtiers fawned over the new ruler, praising even his dullest remarks.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "feeble",
+    "definition": "Lacking strength, force, or convincing support.",
+    "pos": "adjective",
+    "example": "Her feeble objection collapsed when the committee asked for evidence.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "flabbergasting",
+    "definition": "So surprising that it leaves someone astonished.",
+    "pos": "adjective",
+    "example": "The novice's victory over the reigning champion was flabbergasting.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "flagging",
+    "definition": "Becoming weaker, less energetic, or less enthusiastic.",
+    "pos": "adjective",
+    "example": "A short break revived the team's flagging concentration.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "flustered",
+    "definition": "Confused and unsettled by pressure or embarrassment.",
+    "pos": "adjective",
+    "example": "Flustered by the unexpected question, the speaker lost her place in the notes.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "foiled",
+    "definition": "Prevented a plan or effort from succeeding.",
+    "pos": "verb (past tense)",
+    "example": "A sudden storm foiled their attempt to reach the summit.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "forbear",
+    "definition": "To hold back from doing something.",
+    "pos": "verb",
+    "example": "Despite the provocation, he chose to forbear from making a sarcastic reply.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "foreseeable",
+    "definition": "Able to be reasonably anticipated.",
+    "pos": "adjective",
+    "example": "The shortage was foreseeable because demand had risen steadily for months.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "frailties",
+    "definition": "Weaknesses or imperfections in character, ability, or physical strength.",
+    "pos": "plural noun",
+    "example": "The biography acknowledges the leader's frailties without dismissing her achievements.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "fruitful",
+    "definition": "Producing useful results or abundant benefits.",
+    "pos": "adjective",
+    "example": "The researchers' fruitful collaboration led to three new methods.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "fundamental",
+    "definition": "Forming a basic and essential part of something.",
+    "pos": "adjective",
+    "example": "The two proposals rest on a fundamental disagreement about the purpose of education.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "fungible",
+    "definition": "Replaceable by another equivalent item of the same kind.",
+    "pos": "adjective",
+    "example": "Standardized units of the same grade of wheat are fungible, unlike unique paintings.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "gaffes",
+    "definition": "Embarrassing mistakes in speech or social behavior.",
+    "pos": "plural noun",
+    "example": "The ambassador's repeated gaffes turned a routine visit into a diplomatic embarrassment.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "glum",
+    "definition": "Quietly sad or gloomy.",
+    "pos": "adjective",
+    "example": "The players looked glum after losing a match they had expected to win.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "goaded",
+    "definition": "Prodded or provoked someone into taking action.",
+    "pos": "verb (past tense)",
+    "example": "Repeated accusations of cowardice goaded him into accepting the challenge.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "green",
+    "definition": "Inexperienced or unfamiliar with a task or situation.",
+    "pos": "adjective",
+    "example": "Although technically skilled, the green manager had never handled a difficult negotiation.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "grievances",
+    "definition": "Complaints about treatment considered unfair or wrong.",
+    "pos": "plural noun",
+    "example": "The workers submitted their grievances about unpredictable hours and unequal pay.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "harangued",
+    "definition": "Addressed someone in a long, forceful, often critical speech.",
+    "pos": "verb (past tense)",
+    "example": "The coach harangued the team for twenty minutes about its lack of preparation.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "heady",
+    "definition": "Intensely exciting or intoxicating.",
+    "pos": "adjective",
+    "example": "The heady excitement of sudden fame made ordinary routines seem dull.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "heterogenous",
+    "definition": "",
+    "pos": "adjective",
+    "example": "",
+    "confidence": "uncertain",
+    "note": "Valid in specialized senses involving different or external origins, but this source may intend heterogeneous, meaning diverse. Verify the intended spelling and sense before study. Checked against Collins: https://www.collinsdictionary.com/us/dictionary/english/heterogenous"
+  },
+  {
+    "word": "hinder",
+    "definition": "To obstruct progress or make an action more difficult.",
+    "pos": "verb",
+    "example": "Conflicting instructions hinder the volunteers' efforts to distribute supplies.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "histrionics",
+    "definition": "Exaggerated, theatrical displays of emotion.",
+    "pos": "plural noun",
+    "example": "Her quiet statement persuaded the audience more than her opponent's histrionics.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "hypercritical",
+    "definition": "Excessively fault-finding, often over minor details.",
+    "pos": "adjective",
+    "example": "The hypercritical reviewer dismissed an excellent report because two headings were misaligned.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "hypothetical",
+    "definition": "Proposed as an imagined possibility for reasoning or discussion.",
+    "pos": "adjective",
+    "example": "The class examined a hypothetical society in which no one could own land.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "hysterical",
+    "definition": "Overwhelmed by emotion and unable to remain composed.",
+    "pos": "adjective",
+    "example": "The crowd became hysterical when a harmless noise was mistaken for an explosion.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "impaired",
+    "definition": "Weakened or reduced the effectiveness of something.",
+    "pos": "verb (past tense)",
+    "example": "Persistent background noise impaired the participants' ability to concentrate.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "implicitly",
+    "definition": "Through suggestion or implication rather than an explicit statement.",
+    "pos": "adverb",
+    "example": "By inviting only senior staff, the announcement implicitly excluded the interns.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "impugned",
+    "definition": "Challenged the truth, integrity, or validity of something.",
+    "pos": "verb (past tense)",
+    "example": "The lawyer impugned the witness's credibility by revealing several contradictions.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "inborn",
+    "definition": "Present from birth rather than acquired through experience.",
+    "pos": "adjective",
+    "example": "The study distinguished inborn traits from habits learned during childhood.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "incident",
+    "definition": "An event or occurrence, especially one that attracts attention.",
+    "pos": "noun",
+    "example": "The minor incident at the gate delayed the opening by only a few minutes.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "inclusive",
+    "definition": "Including the relevant people or elements rather than leaving them out.",
+    "pos": "adjective",
+    "example": "The committee adopted an inclusive process that welcomed residents from every neighborhood.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "incredulity",
+    "definition": "An inability or unwillingness to believe something.",
+    "pos": "noun",
+    "example": "Her claim to have written the book overnight was met with incredulity.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "indices",
+    "definition": "Indicators or numerical measures used to track a condition or change; plural of index.",
+    "pos": "plural noun",
+    "example": "The researchers compared several indices of social well-being rather than relying on income alone.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "indispensable",
+    "definition": "So necessary that something cannot function properly without it.",
+    "pos": "adjective",
+    "example": "Accurate records are indispensable to an investigation that spans several decades.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "indisputable",
+    "definition": "Too clear or well-supported to be reasonably challenged.",
+    "pos": "adjective",
+    "example": "The dated photographs provided indisputable evidence that the building existed before the war.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "indissoluble",
+    "definition": "Unable to be broken apart, ended, or dissolved.",
+    "pos": "adjective",
+    "example": "The treaty described the alliance as indissoluble, though later events tested that promise.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "inductive",
+    "definition": "Drawing a broader generalization from particular observations or examples.",
+    "pos": "adjective",
+    "example": "Her inductive argument moved from repeated observations of local birds to a tentative rule about the species.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "inextricable",
+    "definition": "So closely entangled that separation or escape is extremely difficult or impossible.",
+    "pos": "adjective",
+    "example": "The historian found an inextricable connection between the city's commerce and its politics.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "informed",
+    "definition": "Based on relevant knowledge or reliable understanding.",
+    "pos": "adjective",
+    "example": "An informed judgment requires reading the evidence on both sides.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "insolent",
+    "definition": "Rudely disrespectful or boldly insulting.",
+    "pos": "adjective",
+    "example": "The assistant's insolent response shocked colleagues who expected ordinary courtesy.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "interchangeable",
+    "definition": "Able to replace one another without a meaningful loss of function.",
+    "pos": "adjective",
+    "example": "The two connectors look alike, but they are not interchangeable.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "intertwined",
+    "definition": "Closely connected or woven together.",
+    "pos": "adjective",
+    "example": "The fortunes of the port and the railway became intertwined as trade expanded.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ironclad",
+    "definition": "So firm or well-established that it is difficult to challenge or break.",
+    "pos": "adjective",
+    "example": "The team wanted ironclad evidence before accusing anyone of altering the results.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "irreverent",
+    "definition": "Showing little respect for people, traditions, or ideas usually treated seriously.",
+    "pos": "adjective",
+    "example": "The play takes an irreverent look at heroes who are usually portrayed with solemn admiration.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "jeopardized",
+    "definition": "Put something in danger or at risk of loss.",
+    "pos": "verb (past tense)",
+    "example": "The careless disclosure jeopardized months of confidential negotiations.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "keep abreast",
+    "definition": "To remain informed about developments.",
+    "pos": "phrasal verb",
+    "example": "Editors must keep abreast of changes in the subjects their publications cover.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "lackey",
+    "definition": "A servile follower who unquestioningly does another person's bidding.",
+    "pos": "noun",
+    "example": "The adviser was dismissed as a lackey because he endorsed every proposal without objection.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "lambasted",
+    "definition": "Criticized someone or something severely.",
+    "pos": "verb (past tense)",
+    "example": "The editorial lambasted the council for ignoring repeated warnings.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "lampooned",
+    "definition": "Ridiculed through satire or an exaggerated portrayal.",
+    "pos": "verb (past tense)",
+    "example": "The cartoon lampooned the mayor by portraying him as a king surrounded by rubber stamps.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "largesse",
+    "definition": "Generous giving of money, gifts, or other benefits.",
+    "pos": "noun",
+    "example": "The museum depended on the collector's largesse to acquire its first major paintings.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "lauded",
+    "definition": "Praised enthusiastically.",
+    "pos": "verb (past tense)",
+    "example": "Reviewers lauded the novel for its precise language and unusual structure.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "lavished",
+    "definition": "Gave or spent something in unusually generous amounts.",
+    "pos": "verb (past tense)",
+    "example": "The committee lavished praise on volunteers who had worked through the night.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "liabilities",
+    "definition": "Weaknesses or disadvantages that create difficulty or risk.",
+    "pos": "plural noun",
+    "example": "His impatience and poor listening skills became liabilities when he began managing a team.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "libertines",
+    "definition": "People who disregard conventional moral restraints, especially in sexual conduct.",
+    "pos": "plural noun",
+    "example": "The novel portrays the wealthy libertines as indifferent to the social rules they expect others to obey.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "linguistics",
+    "definition": "The systematic study of language and how it works.",
+    "pos": "noun",
+    "example": "Her interest in sentence structure led her to study linguistics.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "lisp",
+    "definition": "A speech pattern in which sounds such as s or z are pronounced differently, often like th.",
+    "pos": "noun",
+    "example": "The actor's slight lisp remained audible even when he spoke slowly.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "marginalize",
+    "definition": "To push a person, group, or issue into a position of little influence or importance.",
+    "pos": "verb",
+    "example": "A consultation held only during working hours can marginalize residents who cannot take time off.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "mercantilist",
+    "definition": "Relating to policies that seek national power and wealth through regulated trade, especially by favoring exports over imports.",
+    "pos": "adjective",
+    "example": "The historian described the empire's export incentives and import restrictions as mercantilist policies.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "meritorious",
+    "definition": "Deserving praise or recognition because of merit.",
+    "pos": "adjective",
+    "example": "The award recognized meritorious service that had benefited the whole community.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "metaphoric",
+    "definition": "Using a comparison that describes one thing in terms of another.",
+    "pos": "adjective",
+    "example": "Calling the city a restless animal is a metaphoric description rather than a literal one.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "metastasize",
+    "definition": "To spread from an original site to other locations, especially of cancer; figuratively, to spread harmfully.",
+    "pos": "verb",
+    "example": "Without an early response, a small conflict can metastasize into hostility across the organization.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "mimic",
+    "definition": "To imitate the appearance, behavior, or sound of someone or something.",
+    "pos": "verb",
+    "example": "The device can mimic the calls of several bird species.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "mirthful",
+    "definition": "Full of cheerful amusement or laughter.",
+    "pos": "adjective",
+    "example": "A mirthful exchange between the cousins enlivened the otherwise solemn dinner.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "misanthropic",
+    "definition": "Showing dislike or distrust of humankind.",
+    "pos": "adjective",
+    "example": "The narrator's misanthropic outlook leads him to suspect selfish motives behind every kindness.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "mollified",
+    "definition": "Calmed someone's anger or resentment.",
+    "pos": "verb (past tense)",
+    "example": "A sincere apology mollified the customer, who had expected another excuse.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "momentary",
+    "definition": "Lasting for only a very short time.",
+    "pos": "adjective",
+    "example": "A momentary lapse in attention caused her to miss the final instruction.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "monotonous",
+    "definition": "Tediously repetitive or lacking variation.",
+    "pos": "adjective",
+    "example": "The monotonous task required copying the same figures onto hundreds of forms.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "mutiny",
+    "definition": "A collective rebellion against an established authority, especially by soldiers or sailors.",
+    "pos": "noun",
+    "example": "The captain's refusal to provide fresh water provoked a mutiny among the crew.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "negligent",
+    "definition": "Failing to exercise the care or attention a situation requires.",
+    "pos": "adjective",
+    "example": "The negligent caretaker left the fragile documents exposed to rain.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "nettlesome",
+    "definition": "Persistently irritating or troublesome.",
+    "pos": "adjective",
+    "example": "A nettlesome formatting error kept reappearing whenever the file was saved.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "neutralize",
+    "definition": "To counteract an effect or make something ineffective.",
+    "pos": "verb",
+    "example": "The new evidence helped neutralize the force of the critic's main objection.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "noble",
+    "definition": "Showing admirable moral character, dignity, or generosity.",
+    "pos": "adjective",
+    "example": "Her decision to share the credit was a noble gesture in a fiercely competitive field.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "nullified",
+    "definition": "Cancelled the validity or effect of something.",
+    "pos": "verb (past tense)",
+    "example": "The discovery of a counting error nullified the earlier result.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "numinous",
+    "definition": "Evoking a mysterious sense of spiritual presence or sacred awe.",
+    "pos": "adjective",
+    "example": "In the silence beneath the vast dome, the visitor felt a numinous presence.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "obeisant",
+    "definition": "Showing deep respect or submission to someone.",
+    "pos": "adjective",
+    "example": "The attendants remained obeisant before the monarch, bowing before they spoke.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "obelisk",
+    "definition": "A tall, four-sided stone pillar that narrows upward and ends in a pyramid-shaped point.",
+    "pos": "noun",
+    "example": "A granite obelisk marked the center of the memorial square.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "obloquies",
+    "definition": "Harsh denunciations or expressions of public abuse.",
+    "pos": "plural noun",
+    "example": "The reformer endured the obloquies of critics who condemned every proposed change.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "obsequies",
+    "definition": "Ceremonies or rites performed for someone who has died.",
+    "pos": "plural noun",
+    "example": "Delegates from across the region attended the poet's obsequies.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "obstrusive",
+    "definition": "",
+    "pos": "adjective",
+    "example": "",
+    "confidence": "uncertain",
+    "note": "Likely a misspelling of obtrusive in a modern vocabulary list; a rare dated usage also exists. The intended word and sense need source verification, so no study definition is supplied."
+  },
+  {
+    "word": "ousted",
+    "definition": "Removed someone from a position or place, often against their wishes.",
+    "pos": "verb (past tense)",
+    "example": "The board ousted the director after the investigation revealed repeated misconduct.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "outstripped",
+    "definition": "Surpassed something in speed, amount, or performance.",
+    "pos": "verb (past tense)",
+    "example": "Demand for the new service outstripped the team's ability to provide it.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "paediatrician",
+    "definition": "A physician who specializes in the health and care of children.",
+    "pos": "noun",
+    "example": "The paediatrician explained the child's growth chart to the parents.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "paradigmatic",
+    "definition": "Serving as a clear model or representative example of a type.",
+    "pos": "adjective",
+    "example": "The case became a paradigmatic example of how small errors can undermine a large project.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "paradoxical",
+    "definition": "Apparently self-contradictory or contrary to expectation, yet possibly true.",
+    "pos": "adjective",
+    "example": "It seemed paradoxical that adding more choices made customers less likely to buy anything.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "parlous",
+    "definition": "Dangerously uncertain or full of risk.",
+    "pos": "adjective",
+    "example": "Years of neglect left the bridge in a parlous condition.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "passable",
+    "definition": "Good enough to be acceptable, though not outstanding.",
+    "pos": "adjective",
+    "example": "Her first draft was passable, but the revised essay made a much stronger argument.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "peculiar",
+    "definition": "Unusual or noticeably different from what is expected.",
+    "pos": "adjective",
+    "example": "A peculiar clicking noise interrupted the otherwise quiet recording.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "persevere",
+    "definition": "To continue working toward a goal despite difficulty or discouragement.",
+    "pos": "verb",
+    "example": "The researchers chose to persevere after their first three experiments failed.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "pertinacity",
+    "definition": "Firm, persistent determination that is difficult to discourage.",
+    "pos": "noun",
+    "example": "Her pertinacity kept the investigation moving long after others had abandoned it.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "philistines",
+    "definition": "People regarded as indifferent or hostile to artistic or intellectual pursuits.",
+    "pos": "plural noun",
+    "example": "The novelist unfairly dismissed everyone who disliked his experimental prose as philistines.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "placated",
+    "definition": "Calmed someone who was angry or dissatisfied.",
+    "pos": "verb, past tense",
+    "example": "The manager placated the frustrated customers by explaining the delay and offering refunds.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "plaintively",
+    "definition": "In a way that expresses sadness or sorrowful longing.",
+    "pos": "adverb",
+    "example": "The child asked plaintively when her missing dog would return.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "plodding",
+    "definition": "Moving or progressing slowly and laboriously.",
+    "pos": "adjective",
+    "example": "The report's plodding introduction buried its central finding under pages of background.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ploy",
+    "definition": "A tactic intended to gain an advantage, often by misleading someone.",
+    "pos": "noun",
+    "example": "The false deadline was a ploy to pressure buyers into making an immediate decision.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "poise",
+    "definition": "Calm confidence and self-control, especially under pressure.",
+    "pos": "noun",
+    "example": "She maintained her poise even when the audience challenged her central claim.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "polymathic",
+    "definition": "Having or displaying extensive knowledge across many subjects.",
+    "pos": "adjective",
+    "example": "His polymathic interests connected mathematics, music, philosophy, and architecture.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "predicament",
+    "definition": "A difficult or unpleasant situation that is hard to resolve.",
+    "pos": "noun",
+    "example": "Losing both the original data and its backup left the team in a serious predicament.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "priggish",
+    "definition": "Self-righteously concerned with proper behavior and moral superiority.",
+    "pos": "adjective",
+    "example": "His priggish lecture about punctuality irritated colleagues who were already working overtime.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "prime",
+    "definition": "Of the highest quality or most desirable kind.",
+    "pos": "adjective",
+    "example": "The first visitors secured prime seats with an unobstructed view of the stage.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "principle",
+    "definition": "A fundamental belief or rule that guides conduct or reasoning.",
+    "pos": "noun",
+    "example": "Equal treatment was the principle behind the new admissions policy.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "proficient",
+    "definition": "Skilled and competent in a particular activity.",
+    "pos": "adjective",
+    "example": "After months of practice, she became proficient at interpreting complex statistical tables.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "profundity",
+    "definition": "Great depth of thought, insight, or meaning.",
+    "pos": "noun",
+    "example": "The essay's profundity lay in its careful exploration of an apparently simple question.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "pulsate",
+    "definition": "To beat, throb, or expand and contract rhythmically.",
+    "pos": "verb",
+    "example": "The light seemed to pulsate in time with the music.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "purgatory",
+    "definition": "In some Christian beliefs, a state of purification after death before admission to heaven.",
+    "pos": "noun",
+    "example": "The fictional pilgrim encounters souls undergoing purification in purgatory.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "quarantined",
+    "definition": "Isolated to prevent the possible spread of an infectious disease or harmful agent.",
+    "pos": "verb, past tense",
+    "example": "The newly arrived animals were quarantined until the veterinary checks were complete.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "quashed",
+    "definition": "Suppressed or put an end to something decisively.",
+    "pos": "verb, past tense",
+    "example": "The director quashed the rumor by publishing the full meeting record.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "quirky",
+    "definition": "Unusual in a distinctive, often appealing way.",
+    "pos": "adjective",
+    "example": "The cafe's quirky decor included lamps made from old musical instruments.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "radical",
+    "definition": "Involving fundamental or far-reaching change.",
+    "pos": "adjective",
+    "example": "Replacing the entire grading system was a radical departure from the school's usual policy.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ramifications",
+    "definition": "Consequences or further effects that develop from an action or decision.",
+    "pos": "plural noun",
+    "example": "The committee examined the financial and social ramifications of closing the station.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "rational",
+    "definition": "Based on reason and logical judgment rather than impulse.",
+    "pos": "adjective",
+    "example": "A rational comparison of the proposals required consistent criteria and reliable evidence.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "ravaged",
+    "definition": "Severely damaged or devastated.",
+    "pos": "verb, past tense",
+    "example": "The prolonged drought ravaged farms throughout the valley.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "recanted",
+    "definition": "Publicly withdrew a previously expressed belief or statement.",
+    "pos": "verb, past tense",
+    "example": "The witness recanted her earlier testimony after admitting that she had not seen the event.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "refine",
+    "definition": "To improve something by making careful adjustments or removing flaws.",
+    "pos": "verb",
+    "example": "Feedback from the pilot study helped the team refine its survey questions.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "refuting",
+    "definition": "Disproving a claim by showing that it is false.",
+    "pos": "verb, present participle",
+    "example": "The new measurements succeeded in refuting the claim that the material never expands.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "regressed",
+    "definition": "Returned to an earlier or less developed condition.",
+    "pos": "verb, past tense",
+    "example": "Without regular practice, his reading fluency regressed to its previous level.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "relegated",
+    "definition": "Assigned to a less important position, role, or category.",
+    "pos": "verb, past tense",
+    "example": "The editor relegated the lengthy technical discussion to an appendix.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "relented",
+    "definition": "Became less strict, severe, or resistant.",
+    "pos": "verb, past tense",
+    "example": "After hearing the students' explanation, the teacher relented and extended the deadline.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "remedy",
+    "definition": "A means of correcting a problem or improving an undesirable situation.",
+    "pos": "noun",
+    "example": "Better training offered a practical remedy for the recurring reporting errors.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "reneged",
+    "definition": "Failed to honor a promise, agreement, or commitment.",
+    "pos": "verb, past tense",
+    "example": "The sponsor reneged on its promise to fund the second year of the project.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "repercussions",
+    "definition": "Indirect consequences of an action, usually unwelcome ones.",
+    "pos": "plural noun",
+    "example": "The accounting error had repercussions far beyond the department that made it.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "resilience",
+    "definition": "The ability to recover or adapt after difficulty, damage, or disruption.",
+    "pos": "noun",
+    "example": "The community showed resilience by rebuilding its shared facilities after the flood.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "scorn",
+    "definition": "A feeling or expression of strong contempt or disdain.",
+    "pos": "noun",
+    "example": "The proposal initially met with scorn, but later evidence persuaded its critics to reconsider.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "semiotic",
+    "definition": "Relating to signs, symbols, and the ways they convey meaning.",
+    "pos": "adjective",
+    "example": "Her semiotic analysis examined how colors and gestures communicated authority in the film.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "sensational",
+    "definition": "Designed to provoke intense public interest or excitement, often through exaggeration.",
+    "pos": "adjective",
+    "example": "The sensational headline made a modest scientific finding sound like a sweeping breakthrough.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "sentimentality",
+    "definition": "Excessive or exaggerated emotion, especially tenderness or nostalgia.",
+    "pos": "noun",
+    "example": "The memoir's sentimentality sometimes replaced careful reflection with idealized memories.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "sentries",
+    "definition": "Guards stationed to watch for danger or unauthorized entry.",
+    "pos": "plural noun",
+    "example": "Two sentries kept watch at the entrance throughout the night.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "serene",
+    "definition": "Calm, peaceful, and free from disturbance.",
+    "pos": "adjective",
+    "example": "Despite the heated discussion, her expression remained serene.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "severed",
+    "definition": "Cut apart or brought a connection to an end.",
+    "pos": "verb, past tense",
+    "example": "The dispute severed a partnership that had lasted for decades.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "shrill",
+    "definition": "High-pitched, piercing, and unpleasantly sharp in sound.",
+    "pos": "adjective",
+    "example": "A shrill alarm cut through the noise of the workshop.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "simpatico",
+    "definition": "Compatible in temperament or outlook; easy to get along with.",
+    "pos": "adjective",
+    "example": "The two editors were simpatico, sharing both a dry humor and a patient approach to revision.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "skirts",
+    "definition": "Avoids addressing or confronting something directly.",
+    "pos": "verb, third-person singular",
+    "example": "The report skirts the central question of who authorized the expenditure.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "skullduggery",
+    "definition": "Dishonest or underhanded behavior intended to gain an advantage.",
+    "pos": "noun",
+    "example": "The investigation uncovered financial skullduggery hidden behind apparently routine invoices.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "slighted",
+    "definition": "Treated someone as unimportant or failed to give deserved attention or respect.",
+    "pos": "verb, past tense",
+    "example": "By thanking only the senior researchers, the speaker slighted the assistants who had done much of the work.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "sophistries",
+    "definition": "Arguments that appear clever or plausible but rely on misleading reasoning.",
+    "pos": "plural noun",
+    "example": "The critic exposed the sophistries used to portray a clearly unequal arrangement as fair.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "sparsely",
+    "definition": "Thinly or in small numbers spread over an area.",
+    "pos": "adverb",
+    "example": "The region was sparsely populated, with villages many kilometers apart.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "squandered",
+    "definition": "Wasted something valuable through careless or foolish use.",
+    "pos": "verb, past tense",
+    "example": "The team squandered its limited budget on equipment that the study did not require.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "stern",
+    "definition": "Firm, serious, and strict in manner or judgment.",
+    "pos": "adjective",
+    "example": "The supervisor issued a stern warning after repeated breaches of the laboratory rules.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "stigmatized",
+    "definition": "Marked someone or something with social shame or disapproval.",
+    "pos": "verb, past tense",
+    "example": "The campaign challenged attitudes that had stigmatized people for seeking help.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "stinted",
+    "definition": "Used or provided something sparingly, often less than was needed.",
+    "pos": "verb, past tense",
+    "example": "The owners stinted on maintenance until minor defects became expensive repairs.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "strife",
+    "definition": "Bitter conflict, hostility, or sustained disagreement.",
+    "pos": "noun",
+    "example": "Years of internal strife prevented the organization from agreeing on a common strategy.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "subsumed",
+    "definition": "Included something within a broader category, concept, or whole.",
+    "pos": "verb, past tense",
+    "example": "The revised classification subsumed several narrow categories under one general heading.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "subversion",
+    "definition": "The undermining or attempted overthrow of an established system or authority.",
+    "pos": "noun",
+    "example": "The ruling council viewed the clandestine effort to overthrow it as subversion.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "supplanted",
+    "definition": "Replaced something, often by becoming more effective or influential.",
+    "pos": "verb, past tense",
+    "example": "Digital catalogs gradually supplanted the library's paper index cards.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "suspect",
+    "definition": "Open to doubt or considered unreliable.",
+    "pos": "adjective",
+    "example": "The conclusion remained suspect because no one could verify the underlying measurements.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "swindled",
+    "definition": "Cheated someone out of money or property through deception.",
+    "pos": "verb, past tense",
+    "example": "The impostor swindled customers by collecting payment for goods that did not exist.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "tact",
+    "definition": "Skill in handling sensitive situations without causing unnecessary offense.",
+    "pos": "noun",
+    "example": "She used tact to explain the mistake without embarrassing her colleague.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "tantalizing",
+    "definition": "Arousing interest or desire while keeping satisfaction just out of reach.",
+    "pos": "adjective",
+    "example": "The surviving fragment offered a tantalizing glimpse of a much larger lost manuscript.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "tarnish",
+    "definition": "To damage the good reputation or perceived value of something.",
+    "pos": "verb",
+    "example": "The undisclosed conflict of interest threatened to tarnish the institute's reputation.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "tempered",
+    "definition": "Moderated or softened the force, intensity, or severity of something.",
+    "pos": "verb, past tense",
+    "example": "Her enthusiasm was tempered by concern about the project's uncertain cost.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "tentative",
+    "definition": "Provisional or uncertain and subject to confirmation or change.",
+    "pos": "adjective",
+    "example": "The team offered a tentative explanation while waiting for the remaining results.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "thorough",
+    "definition": "Careful and complete, with close attention to relevant details.",
+    "pos": "adjective",
+    "example": "A thorough inspection revealed defects that the earlier survey had missed.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "touts",
+    "definition": "Promotes or praises something strongly to attract interest.",
+    "pos": "verb, third-person singular",
+    "example": "The advertisement touts the device's speed but says little about its reliability.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "triage",
+    "definition": "The process of sorting cases by urgency or priority when resources are limited.",
+    "pos": "noun",
+    "example": "The support team used triage to address the most disruptive software failures first.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "trifle",
+    "definition": "Something of little value, significance, or importance.",
+    "pos": "noun",
+    "example": "The missing comma seemed a trifle beside the report's major factual errors.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "turbulent",
+    "definition": "Marked by disorder, instability, or frequent disturbance.",
+    "pos": "adjective",
+    "example": "The organization entered a turbulent period of leadership changes and financial uncertainty.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "unalloyed",
+    "definition": "Complete and unmixed with any less desirable element.",
+    "pos": "adjective",
+    "example": "The unexpected reunion brought her unalloyed joy.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "undercut",
+    "definition": "To weaken or undermine the force, credibility, or effectiveness of something.",
+    "pos": "verb",
+    "example": "The conflicting figures undercut the report's claim to precision.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "unscrupulous",
+    "definition": "Willing to act dishonestly or unfairly without regard for moral standards.",
+    "pos": "adjective",
+    "example": "An unscrupulous seller concealed the vehicle's serious defects from prospective buyers.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "upend",
+    "definition": "To overturn or radically disrupt an existing arrangement or expectation.",
+    "pos": "verb",
+    "example": "The discovery could upend the assumptions on which the current theory rests.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "utilitarianism",
+    "definition": "An ethical theory that judges actions by their consequences for overall well-being, favoring the greatest total benefit.",
+    "pos": "noun",
+    "example": "Her essay examined whether utilitarianism could justify a policy that helped many people while seriously harming a few.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "utterly",
+    "definition": "Completely or to an extreme degree.",
+    "pos": "adverb",
+    "example": "The two accounts were utterly incompatible on every essential detail.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "vanquish",
+    "definition": "To defeat an opponent completely.",
+    "pos": "verb",
+    "example": "The challenger hoped to vanquish the reigning champion in the final match.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "vitality",
+    "definition": "Energy, vigor, and capacity for lively activity.",
+    "pos": "noun",
+    "example": "The new members brought vitality to a society that had held few events for years.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "wallowing",
+    "definition": "Indulging deeply and excessively in an emotion or condition.",
+    "pos": "verb, present participle",
+    "example": "Instead of wallowing in disappointment, she used the rejection to revise her proposal.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "waning",
+    "definition": "Gradually decreasing in strength, extent, or importance.",
+    "pos": "adjective",
+    "example": "Waning public interest made it difficult to sustain the campaign.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "wayward",
+    "definition": "Difficult to control and inclined to act contrary to expectations or guidance.",
+    "pos": "adjective",
+    "example": "The wayward apprentice repeatedly ignored instructions and pursued his own experiments.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "weary",
+    "definition": "Tired or exhausted from effort, strain, or prolonged experience.",
+    "pos": "adjective",
+    "example": "After hours of reviewing nearly identical documents, the weary researcher took a break.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "woeful",
+    "definition": "Extremely poor or inadequate.",
+    "pos": "adjective",
+    "example": "The project's woeful planning left the team without equipment or a workable schedule.",
+    "confidence": "reviewed"
+  },
+  {
+    "word": "yielded",
+    "definition": "Produced or provided a result, benefit, or amount.",
+    "pos": "verb, past tense",
+    "example": "The careful comparison yielded several insights that neither study had revealed alone.",
+    "confidence": "reviewed"
+  }
+]
