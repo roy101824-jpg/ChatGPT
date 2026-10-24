@@ -329,8 +329,11 @@ test("checked question practice resumes automatically after reopening", async ({
   await page.getByRole("button", { name: "End practice" }).click();
   await page.reload();
   await expect(
+    page.getByRole("dialog", { name: "Better together" }),
+  ).toHaveCount(0);
+  await expect(
     page.getByRole("heading", {
-      name: "A little practice. A bigger vocabulary.",
+      name: "Know the words. Master the reasoning.",
     }),
   ).toBeVisible();
 });

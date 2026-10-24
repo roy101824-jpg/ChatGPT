@@ -53,6 +53,16 @@ import PracticeSession, {
   type Question,
 } from "./components/PracticeSession";
 import { TrailArt } from "./components/TrailArt";
+import PrepHub from "./prep/PrepHub";
+import { prepBank } from "./prep/bank";
+import {
+  loadPrepProgress,
+  savePrepProgress,
+  parsePrepBackup,
+  serializePrepBackup,
+} from "./prep/storage";
+import { clearRun } from "./prep/session";
+import type { PrepProgress } from "./prep/types";
 import {
   practiceQuestions,
   readingPassages,
@@ -270,7 +280,10 @@ function Modal({
   );
 }
 function App() {
-  const [tab, setTab] = useState<Tab>("today");
+  const [tab, setTab] = useState<Tab>(() => {
+    const hash = location.hash.slice(1);
+    return navigation.some((n) => n.id === hash) ? (hash as Tab) : "today";
+  });
   const [progress, setProgress] = useState<Progress>(loadProgress);
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("all");
@@ -308,6 +321,7 @@ function App() {
     progress: Progress;
     practice?: { correct: number; total: number };
     essay?: string;
+    prep?: PrepProgress;
   } | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const stats = getStats(learnable, progress, clock);
@@ -436,6 +450,7 @@ function App() {
     });
   const nav = (newTab: Tab) => {
     setTab(newTab);
+    history.replaceState(null, "", "#" + newTab);
     setQuery("");
     setFilter("all");
     setSourceFilter("all");
@@ -646,6 +661,22 @@ function App() {
                   <ChevronDown size={14} />
                 </button>
               </div>
+              <section className="prep-home-banner">
+                <Target size={28} />
+                <div>
+                  <h2>Your 170 Verbal training plan</h2>
+                  <p>
+                    {prepBank.length} original questions · every Verbal response
+                    format · timed sections and mistake review
+                  </p>
+                </div>
+                <button
+                  className="button primary"
+                  onClick={() => nav("practice")}
+                >
+                  Enter Verbal training <ArrowRight size={17} />
+                </button>
+              </section>
               <div className="dashboard-grid">
                 <section className="hero-card">
                   <div className="hero-copy">
@@ -991,12 +1022,7 @@ function App() {
             </>
           )}
           {tab === "practice" && (
-            <>
-              <PageHeading
-                eyebrow="LESS MEMORIZING. MORE UNDERSTANDING."
-                title="Give your words a workout."
-                text="Pick a little challenge. Practice the meaning, the context, and the reasoning behind every answer."
-              />
+            <PrepHub>
               <div className="practice-feature">
                 <div>
                   <span className="pill pale">
@@ -1111,7 +1137,7 @@ function App() {
                 Vocabulary comes from your supplied lists. No official score
                 estimates.
               </p>
-            </>
+            </PrepHub>
           )}
           {tab === "library" && (
             <>
@@ -1664,8 +1690,9 @@ function App() {
           <h3 className="settings-subtitle">Keep your progress safe</h3>
           <p className="small muted">
             No account required. No automatic device sync. Back up your
-            vocabulary reviews, notes, bookmarks, practice totals, and essay
-            draft.
+            vocabulary reviews, notes, bookmarks, Verbal attempts, mistake
+            notes, official benchmarks, practice totals, and essay draft.
+            Unfinished timed sessions remain on their original device.
           </p>
           <div className="backup-actions">
             <button
@@ -1710,7 +1737,12 @@ function App() {
                   parsed.essay === undefined
                     ? undefined
                     : importedEssay(parsed.essay);
+                const prep =
+                  parsed.prep === undefined
+                    ? undefined
+                    : parsePrepBackup(JSON.stringify(parsed.prep));
                 setBackupCandidate({
+                  prep,
                   progress: next,
                   practice: importedPractice || undefined,
                   essay,
@@ -1746,6 +1778,11 @@ function App() {
                     const extras = backupCandidate;
                     setProgress(backupCandidate.progress);
                     let storageOkay = true;
+                    if (extras.prep) {
+                      storageOkay = savePrepProgress(extras.prep);
+                      clearRun();
+                      window.dispatchEvent(new Event("wordtrail:prep-import"));
+                    }
                     if (extras.practice) {
                       setPracticeLog(extras.practice);
                       try {
@@ -1820,6 +1857,7 @@ function exportAll(
         version: 1,
         exportedAt: new Date().toISOString(),
         vocabulary: JSON.parse(serializeBackup(progress)),
+        prep: JSON.parse(serializePrepBackup(loadPrepProgress())),
         practice,
         essay: safeRead("wordtrail.essay", ""),
       },

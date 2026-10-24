@@ -1,4 +1,4 @@
-# Vocabulary and source coverage
+# Vocabulary, Verbal practice and source coverage
 
 Wordtrail contains **5,188 distinct study headwords**. **5,186 have study-ready definitions**: 4,932 selected from the supplied resources and 254 with clearly labeled original Wordtrail definitions and examples. Two ambiguous source entries (`heterogenous` and `obstrusive`) remain searchable but excluded from quizzes. The app preserves 2,818 headwords' alternative source definitions and selected usage examples.
 
@@ -25,6 +25,35 @@ Counts overlap and must not be added to calculate distinct vocabulary.
 | GRE Contextual Vocabulary | 139 | All 24 explicit definition blocks |
 | GRE Vocabulary Flash Review | 600 | All 600 headwords |
 
+## Original Verbal practice
+
+The training bank contains **99 original Wordtrail questions**: the previous 39 questions plus a 60-question Verbal expansion. The complete bank covers all seven response formats:
+
+| Format | Full bank | New expansion |
+| --- | ---: | ---: |
+| Text completion, one blank | 28 | 10 |
+| Text completion, two blanks | 12 | 12 |
+| Text completion, three blanks | 10 | 10 |
+| Sentence equivalence | 24 | 12 |
+| Reading, single answer | 17 | 8 |
+| Reading, multiple answers | 4 | 4 |
+| Reading, sentence selection | 4 | 4 |
+| **Total** | **99** | **60** |
+
+The new 60 questions include **37 Advanced**, 22 Standard and one Core item. Across the complete bank, the counts are 37 Advanced, 50 Standard and 12 Core. These labels are editorial estimates, not ETS difficulty calibrations or score bands. Items include an explanation, a trap to avoid and a reusable strategy. Multiblank and multiple-answer scoring requires the complete correct response.
+
+The Verbal training area includes **12 strategy guides** with original micro-examples and official ETS references, plus **six official-resource entries** covering format, scoring, POWERPREP, its paid options, the mini quiz and Verbal guidance. The two POWERPREP entries share an official destination. Links provide access to official material; official question banks are not copied into the app.
+
+Focused drills can filter by response format, topic, difficulty and unseen status. The review queue includes wrong answers and correct answers marked uncertain. Topic insights use the latest attempt per question, while the error journal retains recorded reasons and notes. User-entered official Verbal benchmarks remain separate from app results. Global backups include this prep progress alongside vocabulary progress, practice totals and the writing draft.
+
+## Timing and the 2027 preparation goal
+
+The fixed-form Verbal simulation contains **27 questions in 41 minutes**: a 12-question section with 18 minutes followed by a 15-question section with 23 minutes. Answers can be revisited within the current section, and explanations appear after submission. The clock continues while the app is backgrounded or closed. Standalone 18- and 23-minute sections are also available.
+
+This is Verbal-only timing practice. It does not implement ETS section adaptation, reproduce an official form's question mix, or estimate a 130–170 scaled score. Questions may repeat across sessions. A 170 target is an aspiration; no drill percentage, item count or difficulty label guarantees it.
+
+As of **24 October 2026**, the official ETS pages checked did not identify a separately announced 2027 pattern. Preparation therefore follows the currently published format, with a reminder to recheck ETS before booking and before test day. See [GRE-2027-ALIGNMENT.md](GRE-2027-ALIGNMENT.md) for the dated verification, official links and precise limits of the simulation.
+
 ## Known boundaries
 
 These uploaded PDFs exceed the download tool's 32 MiB limit and their contents were not inspected:
@@ -35,13 +64,13 @@ These uploaded PDFs exceed the download tool's 32 MiB limit and their contents w
 
 The supplied numbered legacy test collection contains 37 sections. Test 12, section 2 was absent. The answer key has a readable text layer; it is inventoried but not used to claim validation of the app's independently authored practice questions.
 
-Older analogies, antonyms, and Argument essay resources are marked legacy. The writing studio uses the current 30-minute Issue-task format. The app's 30 context/equivalence questions, nine reading questions, and five writing prompts are original practice, not official ETS items or score predictors.
+Older analogies, antonyms, and Argument essay resources are marked legacy. The separate writing studio retains five original prompts and the current 30-minute Issue-task format. The 99-question training bank is exclusively Verbal; it does not add Quantitative Reasoning practice. All training questions and writing prompts are original practice, not official ETS items or score predictors.
 
 Source spellings, page breaks and malformed card order were checked during extraction; unambiguous defects were corrected. Imported definitions have provenance, but this is not a claim of exhaustive professional dictionary review. Pages refer to PDF positions, which can differ from printed page labels. Original editorial definitions are explicitly attributed to Wordtrail instead of the uploaded book.
 
 ## Rebuilding the content
 
-The committed JSON is sufficient to build and deploy. Raw books and extracted full text are not committed or deployed.
+The committed JSON and TypeScript content modules are sufficient to build and deploy. Original Verbal questions live in `src/data/practice.ts` and `src/data/prep/verbal.ts`, with the combined bank in `src/prep/bank.ts`. Guides and official-resource metadata live alongside the expanded questions in `src/data/prep/`. Raw books and extracted full text are not committed or deployed.
 
 Extraction scripts live in `scripts/`. They require Python, PyMuPDF, python-docx, openpyxl, and the `pdftotext` binary. Set `WORDTRAIL_SOURCE_DIR` to a local directory containing the authorized source files (original filenames; nested folders accepted) for the primary and secondary import scripts. The reference audit uses the local path manifest in `work/resource-downloads.json`; it is an import-session artifact and must be regenerated for a different machine. Run the primary/secondary parsers and reference audit before `python scripts/merge_vocab.py`. `src/data/editorial-definitions.json` preserves the original editorial additions for repeatable merging.
 

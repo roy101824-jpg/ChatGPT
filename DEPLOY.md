@@ -1,5 +1,7 @@
 # Deploy Wordtrail to Cloudflare
 
+Wordtrail targets the existing Worker **`dry-math-5249`**, with the user-provided URL **https://dry-math-5249.roy101824.workers.dev/**. This is a deployment destination, not a claim that Wordtrail is already live there.
+
 Wordtrail builds to a static `dist` directory. No database, server secrets or paid API keys are needed. Use the path that matches the Cloudflare app you already created. Publishing exposes the bundled vocabulary and original practice exercises to anyone who can access the resulting site; raw uploaded books are not included. The app has no login screen. If you want a private site, apply your Cloudflare Access policy to the deployment and test installation and offline use through that policy.
 
 ## Existing Cloudflare Pages project
@@ -32,7 +34,21 @@ Cloudflare documents [direct upload](https://developers.cloudflare.com/pages/get
 
 ## Existing Cloudflare Worker
 
-The included `wrangler.jsonc` configures Workers Static Assets. Change its `name` from `wordtrail` to your existing Worker name if different, keeping `assets.directory` set to `./dist`.
+The included `wrangler.jsonc` configures Workers Static Assets. Its `name` is already set to `dry-math-5249`, matching your existing Worker. Keep `assets.directory` set to `./dist`.
+
+For automatic deployment to your existing Worker, open **Workers & Pages → dry-math-5249 → Settings → Builds → Connect** and connect **`roy101824-jpg/ChatGPT`**. Use these settings:
+
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` |
+| Root directory | Repository root (default) |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Node.js version | `24` |
+
+After a successful production build, open your Worker URL above. Cloudflare's [Workers Builds guide](https://developers.cloudflare.com/workers/ci-cd/builds/) and [build configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/) describe this connection. The current development workspace has no configured Cloudflare account credentials, so a successful GitHub push alone does not establish that the Worker was deployed.
+
+Alternatively, deploy from a computer signed in to the intended Cloudflare account:
 
 ```sh
 npm ci

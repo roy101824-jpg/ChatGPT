@@ -3,7 +3,7 @@ import { existsSync } from "node:fs";
 
 export default defineConfig({
   testDir: "./tests",
-  testMatch: "app.spec.ts",
+  testMatch: ["app.spec.ts", "prep-ui.spec.ts"],
   timeout: 45_000,
   expect: { timeout: 10_000 },
   fullyParallel: false,
