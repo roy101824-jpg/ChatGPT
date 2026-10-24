@@ -53,6 +53,31 @@ test.beforeEach(async ({ page }) => {
   ).toBeVisible();
 });
 
+test("content provenance and unresolved/reference filters are accurate", async ({ page }) => {
+  await navigate(page, "Library");
+  const search = page.getByRole("textbox", { name: "Search words and meanings" });
+  await search.fill("apt");
+  const apt = page.locator(".word-row").filter({ has: page.getByRole("heading", { name: "apt", exact: true }) });
+  await apt.locator(".word-row-main").click();
+  await expect(page.locator(".definition-attribution")).toHaveText("Meaning from Wordtrail · original definition and example");
+  await expect(page.locator(".detail-definition")).toHaveText("Well suited to a particular situation or purpose.");
+  await page.getByRole("button", { name: "Close dialog" }).click();
+  await search.fill("");
+  await page.getByRole("button", { name: "Needs a definition", exact: true }).click();
+  await expect(page.locator(".word-row")).toHaveCount(2);
+  await expect(page.getByRole("heading", { name: "heterogenous", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "obstrusive", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Reference index", exact: true }).click();
+  await expect(page.getByText("4,005 words", { exact: true })).toBeVisible();
+  await expect(page.getByText(/These 4,005 additional terms/)).toBeVisible();
+  await search.fill("camera");
+  const camera = page.locator(".word-row").filter({ has: page.getByRole("heading", { name: "camera", exact: true }) });
+  await expect(camera).toHaveCount(1);
+  await camera.locator(".word-row-main").click();
+  await expect(page.locator(".source-tags")).toContainText("TEST 14-1.pdf · p. 2");
+  await expect(page.locator(".detail-definition")).toContainText("excluded from quizzes");
+});
+
 test("home and primary screens fit the viewport with no horizontal scrolling", async ({
   page,
 }, testInfo) => {

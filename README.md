@@ -12,6 +12,10 @@ A personal, mobile-first GRE vocabulary and verbal study companion. Built with R
 
 See [SOURCE-COVERAGE.md](SOURCE-COVERAGE.md) for exact counts, provenance and unavailable sources. The ready-built [Cloudflare upload ZIP](releases/wordtrail-cloudflare.zip) contains only deployment assets.
 
+## Preview
+
+[Phone preview](docs/preview-mobile.png) · [Desktop preview](docs/preview-desktop.png)
+
 ## Run locally
 
 Use Node.js 22.12 or newer.
