@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Clock3, Flag, X } from "lucide-react";
-import type { PrepAnswer, PrepAttempt, PrepGrade } from "./types";
+import type { PrepAnswer, PrepGrade } from "./types";
 import { formatLabel, hasCompleteAnswer, scoreAnswer } from "./engine";
 import {
   accountRunTime,
@@ -10,7 +10,7 @@ import {
   type PrepRun,
 } from "./session";
 import { prepById } from "./bank";
-import QuestionView from "./QuestionView";
+import QuestionView, { getResponseSummary } from "./QuestionView";
 
 interface Props {
   initial: PrepRun;
@@ -90,7 +90,11 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
           id: `${current.id}:${id}`,
           question: item,
           answer: current.answers[id] || {},
-          confidence: current.confidence[id] || "unsure",
+          confidence:
+            current.confidence[id] ||
+            (current.mode === "drill" || current.flags.includes(id)
+              ? "unsure"
+              : "unrated"),
           elapsedMs: transition.next.spent[id] || 0,
           mode: current.mode,
         };
@@ -291,6 +295,20 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
         graded: [...current.graded, q.id],
       });
       setNotice("");
+      const checkedId = q.id;
+      requestAnimationFrame(() => {
+        const active = runRef.current;
+        if (
+          active.sections[active.sectionIndex].questionIds[
+            active.questionIndex
+          ] !== checkedId
+        )
+          return;
+        const explanation =
+          container.current?.querySelector<HTMLElement>(".prep-solution h3");
+        explanation?.focus({ preventScroll: true });
+        explanation?.scrollIntoView({ block: "nearest", behavior: "auto" });
+      });
     } catch (error) {
       setNotice(
         error instanceof Error
@@ -311,11 +329,12 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
         : [...current.flags, q.id],
     });
   };
-  const setConfidence = (confidence: PrepAttempt["confidence"]) => {
+  const setConfidence = (confidence: PrepRun["confidence"][string]) => {
     const current = currentForAction(q?.id);
     if (
       !current ||
       !q ||
+      current.mode !== "drill" ||
       current.checked.includes(q.id) ||
       current.graded.includes(q.id)
     )
@@ -403,6 +422,35 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
     const item = prepById.get(id);
     return item ? hasCompleteAnswer(item, run.answers[id] || {}) : false;
   };
+  const responseLabel = (id: string) => {
+    const item = prepById.get(id);
+    return item
+      ? getResponseSummary(item, run.answers[id] || {}).label
+      : "Not answered";
+  };
+  const answeredCount = section.questionIds.filter(answeredItem).length;
+  const markedCount = section.questionIds.filter((id) =>
+    run.flags.includes(id),
+  ).length;
+  const nextMatching = (matches: (id: string) => boolean) => {
+    for (let offset = 1; offset < section.questionIds.length; offset += 1) {
+      const index = (run.questionIndex + offset) % section.questionIds.length;
+      if (matches(section.questionIds[index])) return index;
+    }
+    return -1;
+  };
+  const nextUnanswered = nextMatching((id) => !answeredItem(id));
+  const nextMarked = nextMatching((id) => run.flags.includes(id));
+  const selectReview = (id: string) => {
+    setReviewId(id);
+    requestAnimationFrame(() => {
+      const question = container.current?.querySelector<HTMLElement>(
+        ".prep-results .prep-stem",
+      );
+      question?.focus({ preventScroll: true });
+      question?.scrollIntoView({ block: "start", behavior: "auto" });
+    });
+  };
   return (
     <div
       ref={container}
@@ -488,7 +536,7 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
                   <button
                     key={id}
                     className={correct ? "is-right" : "is-wrong"}
-                    onClick={() => setReviewId(id)}
+                    onClick={() => selectReview(id)}
                     aria-label={`Review question ${i + 1}, ${correct ? "correct" : "incorrect"}`}
                   >
                     {i + 1}
@@ -533,23 +581,25 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
               disabled={checked}
               showSolution={run.mode === "drill" && checked}
             />
-            <div className="prep-confidence">
-              <span>Confidence</span>
-              {(["sure", "unsure", "guess"] as const).map((c) => (
-                <button
-                  key={c}
-                  disabled={checked}
-                  aria-pressed={(run.confidence[q.id] || "unsure") === c}
-                  onClick={() => setConfidence(c)}
-                >
-                  {c === "sure"
-                    ? "Confident"
-                    : c === "unsure"
-                      ? "Unsure"
-                      : "Guess"}
-                </button>
-              ))}
-            </div>
+            {run.mode === "drill" && (
+              <div className="prep-confidence">
+                <span>Confidence</span>
+                {(["sure", "unsure", "guess"] as const).map((c) => (
+                  <button
+                    key={c}
+                    disabled={checked}
+                    aria-pressed={(run.confidence[q.id] || "unsure") === c}
+                    onClick={() => setConfidence(c)}
+                  >
+                    {c === "sure"
+                      ? "Confident"
+                      : c === "unsure"
+                        ? "Unsure"
+                        : "Guess"}
+                  </button>
+                ))}
+              </div>
+            )}
             {run.mode === "drill" && !checked && (
               <button
                 className="button primary prep-check"
@@ -585,16 +635,46 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
             </nav>
             <details className="prep-map">
               <summary>
-                Review / navigate this section ·{" "}
-                {section.questionIds.filter(answeredItem).length} answered
+                Review this section · {answeredCount} answered ·{" "}
+                {section.questionIds.length - answeredCount} remaining ·{" "}
+                {markedCount} marked
               </summary>
-              <div>
+              <div className="prep-review-tools">
+                <button
+                  type="button"
+                  className="button secondary"
+                  disabled={nextUnanswered < 0}
+                  title={
+                    nextUnanswered < 0
+                      ? "No other unanswered questions in this section"
+                      : undefined
+                  }
+                  onClick={() => move(nextUnanswered)}
+                >
+                  Next unanswered <ArrowRight size={14} />
+                </button>
+                <button
+                  type="button"
+                  className="button secondary"
+                  disabled={nextMarked < 0}
+                  title={
+                    nextMarked < 0
+                      ? "No other marked questions in this section"
+                      : undefined
+                  }
+                  onClick={() => move(nextMarked)}
+                >
+                  Next marked <Flag size={14} />
+                </button>
+              </div>
+              <div className="prep-question-map">
                 {section.questionIds.map((id, i) => (
                   <button
                     key={id}
-                    className={`${i === run.questionIndex ? "current" : ""} ${answeredItem(id) ? "answered" : ""}`}
+                    className={`${i === run.questionIndex ? "current" : ""} ${answeredItem(id) ? "answered" : ""} ${responseLabel(id) === "Incomplete" ? "incomplete" : ""}`}
                     onClick={() => move(i)}
-                    aria-label={`Go to question ${i + 1}${run.flags.includes(id) ? ", flagged for review" : ""}`}
+                    aria-label={`Go to question ${i + 1}, ${responseLabel(id).toLowerCase()}${run.flags.includes(id) ? ", flagged for review" : ""}`}
+                    title={`Question ${i + 1}: ${responseLabel(id)}${run.flags.includes(id) ? "; marked for review" : ""}`}
                     aria-current={i === run.questionIndex ? "step" : undefined}
                   >
                     {i + 1}
@@ -602,6 +682,9 @@ export default function PrepRunner({ initial, onClose, onGrade }: Props) {
                   </button>
                 ))}
               </div>
+              <p className="prep-map-key">
+                Filled: answered · Dashed: incomplete · Flag: marked for review
+              </p>
               <button className="text-button" onClick={requestSubmit}>
                 Submit section now <ArrowRight size={15} />
               </button>

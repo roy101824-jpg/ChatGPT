@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 import { readFile } from "node:fs/promises";
+import { practiceQuestions } from "../src/data/practice";
 
 const isMobile = (page: Page) => (page.viewportSize()?.width || 1440) < 768;
 async function navigate(
@@ -30,6 +31,22 @@ async function settings(page: Page) {
     page.getByRole("dialog", { name: "Make your trail your own." }),
   ).toBeVisible();
 }
+async function meaningMatch(page: Page) {
+  if (
+    !(await page.locator(".prep-vocabulary-tools").getAttribute("open")) &&
+    !(await page.getByRole("button", { name: /Meaning match/ }).isVisible())
+  )
+    await page.locator(".prep-vocabulary-tools summary").click();
+  await page.getByRole("button", { name: /Meaning match/ }).click();
+}
+
+async function writingStudio(page: Page) {
+  await settings(page);
+  await page
+    .getByRole("button", { name: "Open writing studio", exact: true })
+    .click();
+}
+
 async function assertNoHorizontalOverflow(page: Page) {
   const size = await page.evaluate(() => ({
     viewport: document.documentElement.clientWidth,
@@ -53,29 +70,55 @@ test.beforeEach(async ({ page }) => {
   ).toBeVisible();
 });
 
-test("content provenance and unresolved/reference filters are accurate", async ({ page }) => {
+test("content provenance and unresolved/reference filters are accurate", async ({
+  page,
+}) => {
   await navigate(page, "Library");
-  const search = page.getByRole("textbox", { name: "Search words and meanings" });
+  const search = page.getByRole("textbox", {
+    name: "Search words and meanings",
+  });
   await search.fill("apt");
-  const apt = page.locator(".word-row").filter({ has: page.getByRole("heading", { name: "apt", exact: true }) });
+  const apt = page
+    .locator(".word-row")
+    .filter({ has: page.getByRole("heading", { name: "apt", exact: true }) });
   await apt.locator(".word-row-main").click();
-  await expect(page.locator(".definition-attribution")).toHaveText("Meaning from Wordtrail · original definition and example");
-  await expect(page.locator(".detail-definition")).toHaveText("Well suited to a particular situation or purpose.");
+  await expect(page.locator(".definition-attribution")).toHaveText(
+    "Meaning from Wordtrail · original definition and example",
+  );
+  await expect(page.locator(".detail-definition")).toHaveText(
+    "Well suited to a particular situation or purpose.",
+  );
   await page.getByRole("button", { name: "Close dialog" }).click();
   await search.fill("");
-  await page.getByRole("button", { name: "Needs a definition", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Needs a definition", exact: true })
+    .click();
   await expect(page.locator(".word-row")).toHaveCount(2);
-  await expect(page.getByRole("heading", { name: "heterogenous", exact: true })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "obstrusive", exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Reference index", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "heterogenous", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "obstrusive", exact: true }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Reference index", exact: true })
+    .click();
   await expect(page.getByText("4,005 words", { exact: true })).toBeVisible();
   await expect(page.getByText(/These 4,005 additional terms/)).toBeVisible();
   await search.fill("camera");
-  const camera = page.locator(".word-row").filter({ has: page.getByRole("heading", { name: "camera", exact: true }) });
+  const camera = page
+    .locator(".word-row")
+    .filter({
+      has: page.getByRole("heading", { name: "camera", exact: true }),
+    });
   await expect(camera).toHaveCount(1);
   await camera.locator(".word-row-main").click();
-  await expect(page.locator(".source-tags")).toContainText("TEST 14-1.pdf · p. 2");
-  await expect(page.locator(".detail-definition")).toContainText("excluded from quizzes");
+  await expect(page.locator(".source-tags")).toContainText(
+    "TEST 14-1.pdf · p. 2",
+  );
+  await expect(page.locator(".detail-definition")).toContainText(
+    "excluded from quizzes",
+  );
 });
 
 test("home and primary screens fit the viewport with no horizontal scrolling", async ({
@@ -157,7 +200,7 @@ test("a chosen quiz answer resumes without scoring twice on a rapid continue", a
   page,
 }) => {
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: "Play meaning match" }).click();
+  await meaningMatch(page);
   const word = (await page
     .getByRole("heading", { level: 1 })
     .textContent())!.trim();
@@ -233,13 +276,11 @@ test("settings export and import round-trip while rejecting an invalid backup", 
   await page
     .getByLabel("Daily review goal", { exact: true })
     .selectOption("30");
-  await page
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "invalid.json",
-      mimeType: "application/json",
-      buffer: Buffer.from('{"version":99}'),
-    });
+  await page.locator("input[type=file]").setInputFiles({
+    name: "invalid.json",
+    mimeType: "application/json",
+    buffer: Buffer.from('{"version":99}'),
+  });
   await expect(page.getByRole("status")).toContainText("Invalid backup");
   await expect(
     page.getByLabel("Daily review goal", { exact: true }),
@@ -248,13 +289,11 @@ test("settings export and import round-trip while rejecting an invalid backup", 
     page.getByText("Replace the progress on this device?", { exact: true }),
   ).toHaveCount(0);
 
-  await page
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "wordtrail.json",
-      mimeType: "application/json",
-      buffer: exported,
-    });
+  await page.locator("input[type=file]").setInputFiles({
+    name: "wordtrail.json",
+    mimeType: "application/json",
+    buffer: exported,
+  });
   await expect(
     page.getByText("Replace the progress on this device?", { exact: true }),
   ).toBeVisible();
@@ -275,51 +314,40 @@ test("settings export and import round-trip while rejecting an invalid backup", 
   ).toHaveValue("5");
 });
 
-test("sentence equivalence requires exactly two choices and explains the reasoning", async ({
+test("an older saved practice session still resumes after its launch card is retired", async ({
   page,
 }) => {
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Better together/ }).click();
-  const check = page.getByRole("button", { name: "Check answer" });
-  const options = page.locator(".answer-option");
-  await expect(options).toHaveCount(6);
-  await expect(check).toBeDisabled();
-  await options.nth(0).click();
-  await expect(check).toBeDisabled();
-  await options.nth(1).click();
-  await expect(check).toBeEnabled();
-  await options.nth(2).click();
-  await expect(page.locator(".answer-option[aria-pressed=true]")).toHaveCount(
-    2,
+  const questions = practiceQuestions
+    .filter((question) => question.type === "equivalence")
+    .slice(0, 2);
+  expect(questions).toHaveLength(2);
+  await page.evaluate(
+    (snapshot) =>
+      localStorage.setItem(
+        "wordtrail.activePractice",
+        JSON.stringify(snapshot),
+      ),
+    {
+      version: 1,
+      questionIds: questions.map((question) => question.id),
+      title: "Better together",
+      index: 0,
+      selected: questions[0].answers,
+      checked: true,
+      score: 0,
+    },
   );
-  await check.click();
-  await expect(page.getByRole("status")).toBeVisible();
-  await expect(page.locator(".answer-option.correct")).toHaveCount(2);
-  expect(
-    (await page.getByRole("status").textContent())!.length,
-  ).toBeGreaterThan(60);
-  await assertNoHorizontalOverflow(page);
-  await page.getByRole("button", { name: "Continue", exact: true }).click();
-  await expect(page.locator(".session-count")).toContainText("2 /");
-  await expect(check).toBeDisabled();
-});
-
-test("checked question practice resumes automatically after reopening", async ({
-  page,
-}) => {
-  await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Better together/ }).click();
-  const question = await page.getByRole("heading", { level: 1 }).textContent();
-  await page.locator(".answer-option").nth(0).click();
-  await page.locator(".answer-option").nth(1).click();
-  await page.getByRole("button", { name: "Check answer" }).click();
-  const reasoning = await page.getByRole("status").textContent();
   await page.reload();
   await expect(
     page.getByRole("dialog", { name: "Better together" }),
   ).toBeVisible();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText(question!);
-  await expect(page.getByRole("status")).toHaveText(reasoning!);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    questions[0].prompt,
+  );
+  await expect(page.getByRole("status")).toContainText(
+    questions[0].explanation,
+  );
   await expect(page.locator(".answer-option[aria-pressed=true]")).toHaveCount(
     2,
   );
@@ -333,71 +361,16 @@ test("checked question practice resumes automatically after reopening", async ({
   ).toHaveCount(0);
   await expect(
     page.getByRole("heading", {
-      name: "Know the words. Master the reasoning.",
+      name: "Verbal Reasoning",
     }),
   ).toBeVisible();
-});
-
-test("reading practice presents the passage and an answer explanation", async ({
-  page,
-}) => {
-  await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Read between the lines/ }).click();
-  await expect(page.locator(".reading-passage")).toBeVisible();
-  expect(
-    (await page.locator(".reading-passage").textContent())!.length,
-  ).toBeGreaterThan(300);
-  await page.locator(".answer-option").first().click();
-  await page.getByRole("button", { name: "Check answer" }).click();
-  await expect(page.getByRole("status")).toBeVisible();
-  await assertNoHorizontalOverflow(page);
-  await page.getByRole("button", { name: "Continue", exact: true }).click();
-  await expect(page.locator(".reading-passage")).toBeVisible();
-});
-
-test("long reading practice scrolls with a real wheel or touch gesture", async ({
-  page,
-  context,
-}) => {
-  await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Read between the lines/ }).click();
-  await expect(page.locator(".reading-passage")).toBeVisible();
-  await page.evaluate(() => window.scrollTo(0, 0));
-  const viewport = page.viewportSize()!;
-  if (isMobile(page)) {
-    const touch = await context.newCDPSession(page);
-    const x = Math.round(viewport.width / 2);
-    const y = Math.round(viewport.height * 0.75);
-    await touch.send("Input.dispatchTouchEvent", {
-      type: "touchStart",
-      touchPoints: [{ x, y }],
-    });
-    for (let distance = 60; distance <= 360; distance += 60) {
-      await touch.send("Input.dispatchTouchEvent", {
-        type: "touchMove",
-        touchPoints: [{ x, y: y - distance }],
-      });
-    }
-    await touch.send("Input.dispatchTouchEvent", {
-      type: "touchEnd",
-      touchPoints: [],
-    });
-    await touch.detach();
-  } else {
-    await page.mouse.move(viewport.width / 2, viewport.height / 2);
-    await page.mouse.wheel(0, 600);
-  }
-  await expect
-    .poll(() => page.evaluate(() => window.scrollY))
-    .toBeGreaterThan(50);
-  await assertNoHorizontalOverflow(page);
 });
 
 test("writing studio saves a draft and offers a revision checklist", async ({
   page,
 }) => {
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   const draft =
     "A policy should be judged by the circumstances in which it operates. For example, a local school may need flexibility to meet its students’ needs. A strong counterargument deserves serious consideration.";
   await page.getByLabel("YOUR ARGUMENT, YOUR VOICE").fill(draft);
@@ -410,7 +383,7 @@ test("writing studio saves a draft and offers a revision checklist", async ({
   await assertNoHorizontalOverflow(page);
   await page.reload();
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   await expect(page.getByLabel("YOUR ARGUMENT, YOUR VOICE")).toHaveValue(draft);
 });
 
@@ -419,7 +392,7 @@ test("essay timer survives reload, pauses for later, and resets only after confi
 }) => {
   await page.clock.install({ time: new Date() });
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   await page
     .getByLabel("YOUR ARGUMENT, YOUR VOICE")
     .fill("A measured position needs a clear example.");
@@ -428,7 +401,7 @@ test("essay timer survives reload, pauses for later, and resets only after confi
   await expect(page.locator(".timer")).toHaveText("29:54");
   await page.reload();
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   await expect(page.getByRole("button", { name: "Pause timer" })).toBeVisible();
   await page.clock.fastForward(4000);
   await expect(page.locator(".timer")).toHaveText("29:50");
@@ -438,7 +411,7 @@ test("essay timer survives reload, pauses for later, and resets only after confi
   ).toBeVisible();
   await page.getByRole("button", { name: "Close writing studio" }).click();
   await page.clock.fastForward(5000);
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   await expect(page.locator(".timer")).toHaveText("29:50");
   await expect(
     page.getByRole("button", { name: "Resume timer" }),
@@ -462,7 +435,7 @@ test("an invalid nested essay backup is rejected without replacing a saved draft
   page,
 }) => {
   await navigate(page, "Practice");
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   await page
     .getByLabel("YOUR ARGUMENT, YOUR VOICE")
     .fill("A draft worth preserving.");
@@ -475,13 +448,11 @@ test("an invalid nested essay backup is rejected without replacing a saved draft
     (await readFile((await download.path())!)).toString(),
   );
   backup.essay = JSON.stringify({ promptIndex: 0, draft: { bad: true } });
-  await page
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "invalid-essay.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(JSON.stringify(backup)),
-    });
+  await page.locator("input[type=file]").setInputFiles({
+    name: "invalid-essay.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(backup)),
+  });
   await expect(page.getByRole("status")).toContainText(
     "The essay draft in this backup is invalid.",
   );
@@ -489,7 +460,7 @@ test("an invalid nested essay backup is rejected without replacing a saved draft
     page.getByText("Replace the progress on this device?", { exact: true }),
   ).toHaveCount(0);
   await page.getByRole("button", { name: "Close dialog" }).click();
-  await page.getByRole("button", { name: /Make your case/ }).click();
+  await writingStudio(page);
   await expect(page.getByLabel("YOUR ARGUMENT, YOUR VOICE")).toHaveValue(
     "A draft worth preserving.",
   );
@@ -517,10 +488,10 @@ test("compact portrait and phone landscape remain usable without overflow", asyn
       await assertNoHorizontalOverflow(page);
     }
     await navigate(page, "Practice");
-    await page.getByRole("button", { name: /Better together/ }).click();
-    await expect(page.locator(".answer-option")).toHaveCount(6);
+    await meaningMatch(page);
+    await expect(page.locator(".answer-option")).toHaveCount(4);
     await assertNoHorizontalOverflow(page);
-    await page.getByRole("button", { name: "End practice" }).click();
+    await page.getByRole("button", { name: "End session" }).click();
   }
 });
 
@@ -558,8 +529,8 @@ test("production app reopens offline with its vocabulary and practice available"
     await navigate(page, "Library");
     await expect(page.locator(".word-row").first()).toBeVisible();
     await navigate(page, "Practice");
-    await page.getByRole("button", { name: /Better together/ }).click();
-    await expect(page.locator(".answer-option")).toHaveCount(6);
+    await meaningMatch(page);
+    await expect(page.locator(".answer-option")).toHaveCount(4);
   } finally {
     await context.setOffline(false);
   }

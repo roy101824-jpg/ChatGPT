@@ -43,7 +43,7 @@ export interface PrepAttempt {
   answer: PrepAnswer;
   correct: boolean;
   elapsedMs: number;
-  confidence: "sure" | "unsure" | "guess";
+  confidence: "sure" | "unsure" | "guess" | "unrated";
   createdAt: number;
   mode: "drill" | "timed" | "exam";
   errorReason?: ErrorReason;

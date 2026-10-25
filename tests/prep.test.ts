@@ -344,3 +344,36 @@ test("storage gracefully handles unavailability and round-trips valid data", () 
       delete (globalThis as unknown as { localStorage?: unknown }).localStorage;
   }
 });
+
+test("correct unrated timed responses do not become uncertain reviews, and backups retain unrated", () => {
+  const correct = question({ id: "timed-unrated-correct" });
+  const missed = question({ id: "timed-unrated-missed" });
+  let progress = recordAttempt(
+    defaultPrepProgress(),
+    correct,
+    { selections: [...correct.answers!] },
+    "unrated",
+    40000,
+    "timed",
+    1000,
+  );
+  let stats = getPrepStats([correct, missed], progress);
+  assert.deepEqual(stats.reviewIds, []);
+  assert.equal(stats.unsure, 0);
+  assert.equal(stats.byTopic[0].unsure, 0);
+  assert.equal(stats.accuracy, 100);
+  const restored = parsePrepBackup(serializePrepBackup(progress));
+  assert.equal(restored.attempts[0].confidence, "unrated");
+  progress = recordAttempt(
+    restored,
+    missed,
+    {},
+    "unrated",
+    30000,
+    "exam",
+    2000,
+  );
+  stats = getPrepStats([correct, missed], progress);
+  assert.deepEqual(stats.reviewIds, [missed.id]);
+  assert.equal(stats.unsure, 0);
+});

@@ -27,24 +27,30 @@ Counts overlap and must not be added to calculate distinct vocabulary.
 
 ## Original Verbal practice
 
-The training bank contains **99 original Wordtrail questions**: the previous 39 questions plus a 60-question Verbal expansion. The complete bank covers all seven response formats:
+The training bank contains **99 original Wordtrail questions**: the previous 39 questions plus a 60-question Verbal expansion. The chooser uses the three official categories—Text Completion, Sentence Equivalence and Reading Comprehension—with these seven response subtypes:
 
 | Format | Full bank | New expansion |
 | --- | ---: | ---: |
-| Text completion, one blank | 28 | 10 |
-| Text completion, two blanks | 12 | 12 |
-| Text completion, three blanks | 10 | 10 |
-| Sentence equivalence | 24 | 12 |
-| Reading, single answer | 17 | 8 |
-| Reading, multiple answers | 4 | 4 |
-| Reading, sentence selection | 4 | 4 |
+| Text Completion, one blank | 28 | 10 |
+| Text Completion, two blanks | 12 | 12 |
+| Text Completion, three blanks | 10 | 10 |
+| Sentence Equivalence | 24 | 12 |
+| Reading Comprehension, Select One Answer Choice | 17 | 8 |
+| Reading Comprehension, Select One or More Answer Choices | 4 | 4 |
+| Reading Comprehension, Select-in-Passage | 4 | 4 |
 | **Total** | **99** | **60** |
 
 The new 60 questions include **37 Advanced**, 22 Standard and one Core item. Across the complete bank, the counts are 37 Advanced, 50 Standard and 12 Core. These labels are editorial estimates, not ETS difficulty calibrations or score bands. Items include an explanation, a trap to avoid and a reusable strategy. Multiblank and multiple-answer scoring requires the complete correct response.
 
+For Reading Comprehension's Select One or More Answer Choices, one, two or all three choices can be correct. Sentence Equivalence requires two choices that produce equivalent completed sentences. These are response rules, not a count of how many questions of each subtype will appear in an official section. The taxonomy was reconfirmed against ETS on **25 October 2026**; see [GRE-2027-ALIGNMENT.md](GRE-2027-ALIGNMENT.md) for official references.
+
 The Verbal training area includes **12 strategy guides** with original micro-examples and official ETS references, plus **six official-resource entries** covering format, scoring, POWERPREP, its paid options, the mini quiz and Verbal guidance. The two POWERPREP entries share an official destination. Links provide access to official material; official question banks are not copied into the app.
 
-Focused drills can filter by response format, topic, difficulty and unseen status. The review queue includes wrong answers and correct answers marked uncertain. Topic insights use the latest attempt per question, while the error journal retains recorded reasons and notes. User-entered official Verbal benchmarks remain separate from app results. Global backups include this prep progress alongside vocabulary progress, practice totals and the writing draft.
+All new Verbal practice entry points use this combined bank and the current runner, including Today's Text Completion shortcut. Focused drills can filter by category, response format, topic, difficulty and unseen status. Setup displays the actual count after filtering, explains a shorter available session, and disables Start when no questions match. Practice tabs and filter choices are remembered for the browser session. These interface refinements add no questions to the bank.
+
+Editable questions offer Clear answer. The section map distinguishes complete, incomplete and marked responses, with direct navigation to the next unanswered or marked item. A saved session can be resumed from the hub; replacing it requires confirmation. Older active sessions still recover in the legacy runner, with existing practice totals and backups preserved.
+
+The review queue includes wrong answers and correct answers marked uncertain. Topic insights use the latest attempt per question, while the error journal retains recorded reasons and notes. User-entered official Verbal benchmarks remain separate from app results. Global backups include this prep progress alongside vocabulary progress, practice totals and the writing draft. Vocabulary support is a separate expandable area with Meaning match, Saved words and Missed words; it does not add to the Verbal question count.
 
 ## Timing and the 2027 preparation goal
 
@@ -52,7 +58,7 @@ The fixed-form Verbal simulation contains **27 questions in 41 minutes**: a 12-q
 
 This is Verbal-only timing practice. It does not implement ETS section adaptation, reproduce an official form's question mix, or estimate a 130–170 scaled score. Questions may repeat across sessions. A 170 target is an aspiration; no drill percentage, item count or difficulty label guarantees it.
 
-As of **24 October 2026**, the official ETS pages checked did not identify a separately announced 2027 pattern. Preparation therefore follows the currently published format, with a reminder to recheck ETS before booking and before test day. See [GRE-2027-ALIGNMENT.md](GRE-2027-ALIGNMENT.md) for the dated verification, official links and precise limits of the simulation.
+As of **25 October 2026**, the official ETS pages checked did not identify a separately announced 2027 pattern. Preparation therefore follows the currently published format, with a reminder to recheck ETS before booking and before test day. See [GRE-2027-ALIGNMENT.md](GRE-2027-ALIGNMENT.md) for the dated verification, official links and precise limits of the simulation.
 
 ## Known boundaries
 
@@ -64,7 +70,7 @@ These uploaded PDFs exceed the download tool's 32 MiB limit and their contents w
 
 The supplied numbered legacy test collection contains 37 sections. Test 12, section 2 was absent. The answer key has a readable text layer; it is inventoried but not used to claim validation of the app's independently authored practice questions.
 
-Older analogies, antonyms, and Argument essay resources are marked legacy. The separate writing studio retains five original prompts and the current 30-minute Issue-task format. The 99-question training bank is exclusively Verbal; it does not add Quantitative Reasoning practice. All training questions and writing prompts are original practice, not official ETS items or score predictors.
+Older analogies, antonyms, and Argument essay resources are marked legacy. The optional writing studio has moved to **Settings → Open writing studio** and retains its five original prompts, saved drafts and timers. It follows the current 30-minute Issue-task format for the separate Analytical Writing measure. The 99-question training bank is exclusively Verbal; it does not add Quantitative Reasoning practice. All training questions and writing prompts are original practice, not official ETS items or score predictors.
 
 Source spellings, page breaks and malformed card order were checked during extraction; unambiguous defects were corrected. Imported definitions have provenance, but this is not a claim of exhaustive professional dictionary review. Pages refer to PDF positions, which can differ from printed page labels. Original editorial definitions are explicitly attributed to Wordtrail instead of the uploaded book.
 

@@ -7,19 +7,15 @@ import type {
   PrepQuestion,
 } from "./types.ts";
 
-const FORMATS: Record<PrepFormat, string> = {
-  tc1: "Text completion · 1 blank",
-  tc2: "Text completion · 2 blanks",
-  tc3: "Text completion · 3 blanks",
-  se: "Sentence equivalence",
-  "rc-single": "Reading · one answer",
-  "rc-multi": "Reading · multiple answers",
-  "rc-sentence": "Reading · select a sentence",
-};
+import { formatNames as FORMATS } from "./catalog.ts";
+
 export const formatLabel = (format: PrepFormat): string =>
   Object.prototype.hasOwnProperty.call(FORMATS, format)
     ? FORMATS[format]
     : "Practice question";
+
+export const isUncertain = (confidence: PrepAttempt["confidence"]): boolean =>
+  confidence === "unsure" || confidence === "guess";
 
 const validIndex = (value: unknown, length: number) =>
   typeof value === "number" &&
@@ -349,7 +345,7 @@ export function getPrepStats(
     const item = topics.get(`${question.section}:${question.topic}`)!;
     item.topic.attempts += 1;
     item.topic.correct += Number(attempt.correct);
-    item.topic.unsure += Number(attempt.confidence !== "sure");
+    item.topic.unsure += Number(isUncertain(attempt.confidence));
     item.seconds += attempt.elapsedMs / 1000;
   }
   const byTopic = [...topics.values()]
@@ -371,7 +367,7 @@ export function getPrepStats(
     accuracy: latest.size ? Math.round((correct / latest.size) * 100) : 0,
     unseen: questions.size - latest.size,
     reviewIds: latestAttempts
-      .filter((attempt) => !attempt.correct || attempt.confidence !== "sure")
+      .filter((attempt) => !attempt.correct || isUncertain(attempt.confidence))
       .sort(
         (a, b) =>
           Number(a.correct) - Number(b.correct) || a.createdAt - b.createdAt,
@@ -382,7 +378,7 @@ export function getPrepStats(
     totalSeconds: Math.round(
       validAttempts.reduce((sum, attempt) => sum + attempt.elapsedMs, 0) / 1000,
     ),
-    unsure: latestAttempts.filter((attempt) => attempt.confidence !== "sure")
+    unsure: latestAttempts.filter((attempt) => isUncertain(attempt.confidence))
       .length,
   };
 }
@@ -433,7 +429,7 @@ export function recordAttempt(
   )
     throw new Error("Choose a supported verbal practice question.");
   if (
-    !["sure", "unsure", "guess"].includes(confidence) ||
+    !["sure", "unsure", "guess", "unrated"].includes(confidence) ||
     !["drill", "timed", "exam"].includes(mode)
   )
     throw new Error("The practice attempt has an invalid mode or confidence.");

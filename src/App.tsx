@@ -62,7 +62,7 @@ import {
   serializePrepBackup,
 } from "./prep/storage";
 import { clearRun } from "./prep/session";
-import type { PrepProgress } from "./prep/types";
+import type { PrepFormat, PrepProgress } from "./prep/types";
 import {
   practiceQuestions,
   readingPassages,
@@ -284,6 +284,7 @@ function App() {
     const hash = location.hash.slice(1);
     return navigation.some((n) => n.id === hash) ? (hash as Tab) : "today";
   });
+  const [prepFocus, setPrepFocus] = useState<PrepFormat>();
   const [progress, setProgress] = useState<Progress>(loadProgress);
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("all");
@@ -450,6 +451,7 @@ function App() {
     });
   const nav = (newTab: Tab) => {
     setTab(newTab);
+    setPrepFocus(undefined);
     history.replaceState(null, "", "#" + newTab);
     setQuery("");
     setFilter("all");
@@ -805,20 +807,18 @@ function App() {
                 <button
                   className="flow-card"
                   onClick={() => {
-                    const q = practiceQuestions
-                      .filter((q) => q.type === "context")
-                      .slice(0, 5);
-                    setPractice({ questions: q, title: "Context clues" });
+                    nav("practice");
+                    setPrepFocus("tc1");
                   }}
                 >
                   <span className="tile-icon butter">
                     <BookOpen size={23} />
                   </span>
                   <span className="flow-content">
-                    <strong>Beyond the flashcard</strong>
-                    <span>Put your words into context</span>
+                    <strong>Text Completion</strong>
+                    <span>Follow the clues and complete the sentence</span>
                     <small>
-                      Context clues <ArrowRight size={14} />
+                      One-blank practice <ArrowRight size={14} />
                     </small>
                   </span>
                 </button>
@@ -1022,120 +1022,45 @@ function App() {
             </>
           )}
           {tab === "practice" && (
-            <PrepHub>
-              <div className="practice-feature">
-                <div>
-                  <span className="pill pale">
-                    <Sparkles size={13} /> SMALL SESSION, BIG ENERGY
-                  </span>
-                  <h2>
-                    Find the right meaning.
-                    <br />
-                    Make a lasting connection.
-                  </h2>
-                  <p>A quick recall session drawn from your word collection.</p>
-                  <button
-                    className="button primary"
-                    onClick={() => start("learn", "quiz")}
-                  >
-                    Play meaning match <ArrowRight size={18} />
-                  </button>
-                </div>
-                <div className="floating-word">
-                  <span>perspicacious</span>
-                  <small>sharp in understanding</small>
-                  <div>
-                    <Check size={16} /> A perfect match
-                  </div>
-                </div>
-              </div>
+            <PrepHub initialFormat={prepFocus}>
               <div className="section-title">
-                <h2>Choose your challenge</h2>
+                <h2>Vocabulary support</h2>
                 <span className="muted small">
-                  A little variety goes a long way
+                  Build the word knowledge behind your answers
                 </span>
               </div>
               <div className="practice-grid">
                 <PracticeCard
-                  icon={<BookOpen />}
-                  color="peach"
-                  title="Context clues"
-                  label="TEXT COMPLETION"
-                  text="Read the signals. Find the word that fits the sentence’s logic."
-                  count={`${practiceQuestions.filter((q) => q.type === "context").length} original questions`}
-                  onClick={() =>
-                    setPractice({
-                      questions: practiceQuestions.filter(
-                        (q) => q.type === "context",
-                      ),
-                      title: "Context clues",
-                    })
-                  }
-                />
-                <PracticeCard
-                  icon={<Sparkles />}
+                  icon={<Zap />}
                   color="lavender"
-                  title="Better together"
-                  label="SENTENCE EQUIVALENCE"
-                  text="Two words. One meaning. Find the pair that makes both sentences work."
-                  count={`${practiceQuestions.filter((q) => q.type === "equivalence").length} original questions`}
-                  onClick={() =>
-                    setPractice({
-                      questions: practiceQuestions.filter(
-                        (q) => q.type === "equivalence",
-                      ),
-                      title: "Better together",
-                    })
-                  }
-                />
-                <PracticeCard
-                  icon={<Search />}
-                  color="butter"
-                  title="Read between the lines"
-                  label="READING COMPREHENSION"
-                  text="Trace the argument, weigh the evidence, and make precise inferences."
-                  count={`${readingPassages.length} original passages`}
-                  onClick={() =>
-                    setPractice({
-                      questions: readingPassages.flatMap((p) =>
-                        p.questions.map((q) => ({ ...q, passage: p.passage })),
-                      ),
-                      title: "Read between the lines",
-                    })
-                  }
-                />
-                <PracticeCard
-                  icon={<Feather />}
-                  color="mint"
-                  title="Make your case"
-                  label="ISSUE WRITING"
-                  text="Build a thoughtful argument with a 30-minute writing studio and self-check."
-                  count={`${essayPrompts.length} original prompts`}
-                  onClick={() => setEssay(true)}
+                  title="Meaning match"
+                  label="VOCABULARY RECALL"
+                  text="Match words to their meanings in a quick recall session."
+                  count={`${progress.settings.sessionSize} words per session`}
+                  onClick={() => start("learn", "quiz")}
                 />
                 <PracticeCard
                   icon={<Bookmark />}
                   color="pink"
-                  title="Your personal collection"
-                  label="SAVED WORDS"
-                  text="Give the words you’ve saved a little extra attention."
+                  title="Saved words"
+                  label="YOUR COLLECTION"
+                  text="Review the words you’ve bookmarked with focused flashcards."
                   count={`${progress.bookmarks.length} saved words`}
                   onClick={() => start("bookmarked", "flashcard")}
                 />
                 <PracticeCard
                   icon={<Target />}
                   color="blue"
-                  title="Turn tricky into familiar"
+                  title="Missed words"
                   label="FOCUSED REVIEW"
-                  text="Return to words you’ve missed and make your next encounter easier."
+                  text="Practice meanings you’ve missed and strengthen your recall."
                   count={`${Object.values(progress.words).filter((w) => w.lapses > 0).length} words to strengthen`}
                   onClick={() => start("weak", "quiz")}
                 />
               </div>
               <p className="content-note">
-                Question practice is independently written, with explanations.
-                Vocabulary comes from your supplied lists. No official score
-                estimates.
+                Vocabulary practice uses your supplied word collection and
+                tracks your recall separately from Verbal question practice.
               </p>
             </PrepHub>
           )}
@@ -1687,6 +1612,21 @@ function App() {
                 : "Your daily practice is always worth keeping."}
             </p>
           )}
+          <h3 className="settings-subtitle">Optional writing practice</h3>
+          <p className="small muted">
+            Analytical Writing is a separate GRE task. The writing studio has{" "}
+            {essayPrompts.length} original Issue prompts, a 30-minute timer, and
+            a self-check. Your saved draft and timer are kept here.
+          </p>
+          <button
+            className="button secondary"
+            onClick={() => {
+              setModal(null);
+              setEssay(true);
+            }}
+          >
+            <Feather size={17} /> Open writing studio
+          </button>
           <h3 className="settings-subtitle">Keep your progress safe</h3>
           <p className="small muted">
             No account required. No automatic device sync. Back up your

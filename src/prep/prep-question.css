@@ -307,3 +307,204 @@
     transition: none !important;
   }
 }
+
+/* Response controls describe completion only; grading remains in the explanation. */
+.prep-response-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid #dce4d5;
+  padding: 16px 0 4px;
+  margin-top: 12px;
+}
+.prep-response-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.prep-response-summary strong {
+  font-size: 13px;
+  font-weight: 650;
+  color: #344e40;
+}
+.prep-response-summary span {
+  font-size: 12px;
+  color: #607259;
+}
+.prep-clear-answer,
+.prep-reading-jump {
+  background: transparent;
+  color: #365e45;
+  border: 1px solid #c7d5bd;
+  border-radius: 8px;
+  min-height: 44px;
+  padding: 9px 13px;
+  font-size: 12px;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+.prep-clear-answer:hover:not(:disabled),
+.prep-reading-jump:hover {
+  background: #eaf1e1;
+}
+.prep-clear-answer:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.prep-passage-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.prep-passage-heading h3 {
+  margin: 10px 0 0;
+}
+.prep-back-to-passage {
+  margin: -8px 0 18px;
+}
+.prep-question-stem,
+.prep-passage h3,
+.prep-solution h3 {
+  scroll-margin-top: 112px;
+}
+.prep-question-stem:focus,
+.prep-passage h3:focus,
+.prep-solution h3:focus {
+  outline: none;
+}
+.prep-runner .prep-map > .prep-review-tools {
+  gap: 10px;
+  margin: 17px 0;
+}
+.prep-runner .prep-map > .prep-review-tools > button {
+  width: auto;
+  height: auto;
+  min-height: 44px;
+  padding: 10px 13px;
+  gap: 8px;
+  font-size: 11px;
+}
+.prep-runner .prep-map > .prep-question-map {
+  margin-top: 12px;
+}
+.prep-runner .prep-map > .prep-question-map > .incomplete {
+  border: 2px dashed #9c8149;
+  background: #fbf5e7;
+  color: #725a2a;
+}
+.prep-map-key {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #657b59;
+  margin-top: 16px;
+}
+@media (max-width: 600px) {
+  .prep-passage-heading {
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .prep-passage-heading h3 {
+    margin: 0;
+    flex: 1 1 130px;
+  }
+  .prep-reading-jump {
+    font-size: 11px;
+    padding: 9px 11px;
+  }
+  .prep-response-tools {
+    gap: 10px;
+    align-items: center;
+  }
+  .prep-response-summary {
+    min-width: 0;
+  }
+  .prep-response-summary strong {
+    font-size: 12px;
+  }
+  .prep-response-summary span {
+    font-size: 11px;
+    line-height: 1.65;
+  }
+  .prep-clear-answer {
+    font-size: 11px;
+    padding: 9px 11px;
+  }
+  .prep-runner .prep-map > .prep-review-tools {
+    gap: 8px;
+  }
+  .prep-runner .prep-map > .prep-review-tools > button {
+    flex: 1 1 120px;
+    justify-content: center;
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+.prep-runner .prep-question-meta > .pill {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  min-width: 0;
+  line-height: 1.6;
+  flex: 0 1 auto;
+}
+@media (max-width: 420px) {
+  .prep-runner .prep-question-meta > .pill {
+    flex-basis: 100%;
+  }
+}
+
+/* Select-in-Passage remains continuous prose, with a keyboard target per sentence. */
+.prep-selectable-passage {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.95;
+}
+.prep-selectable-passage .prep-sentence {
+  display: inline;
+  min-height: 0;
+  padding: 2px 0;
+  margin: 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+  color: inherit;
+  cursor: pointer;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.prep-selectable-passage .prep-sentence-number {
+  display: none;
+}
+.prep-selectable-passage .prep-sentence:not([aria-disabled="true"]):hover {
+  background: #edf1e6;
+}
+.prep-selectable-passage .prep-sentence.prep-selected {
+  background: #dfead2;
+}
+.prep-selectable-passage .prep-sentence.prep-correct {
+  background: #dcefdc;
+}
+.prep-selectable-passage .prep-sentence.prep-incorrect {
+  background: #f8dfd1;
+}
+.prep-selectable-passage .prep-sentence[aria-disabled="true"] {
+  cursor: text;
+}
+.prep-selectable-passage .prep-sentence:focus-visible {
+  outline: 2px solid #5b7d46;
+  outline-offset: 2px;
+}
+@media (max-width: 600px) {
+  .prep-selectable-passage {
+    font-size: 16px;
+    line-height: 1.95;
+  }
+}

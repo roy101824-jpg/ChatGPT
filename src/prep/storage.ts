@@ -109,7 +109,7 @@ function validate(raw: unknown): PrepProgress {
       return fail("correct must be true or false.");
     if (
       typeof item.confidence !== "string" ||
-      !["sure", "unsure", "guess"].includes(item.confidence)
+      !["sure", "unsure", "guess", "unrated"].includes(item.confidence)
     )
       return fail("confidence is invalid.");
     if (

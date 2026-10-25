@@ -7,17 +7,28 @@ A personal, mobile-first GRE vocabulary and Verbal study companion. Built with R
 - 5,188 study headwords; 5,186 with definitions and two clearly flagged for review.
 - A separate 4,005-term reference index and a catalog of all 67 supplied files.
 - Spaced reviews, flashcards, meaning quizzes, saved words, personal notes, progress and streaks.
-- 99 original Verbal questions across all seven response formats: the previous 39 questions plus 60 new items, including 37 labeled Advanced.
-- Focused drills by format, topic, difficulty and unseen status, with explanations, tempting-answer analysis and reusable strategies.
+- 99 original Verbal questions organized under the three official categories and seven response subtypes: the previous 39 questions plus 60 new items, including 37 labeled Advanced.
+- One Verbal challenge chooser and focused drills by category, response format, topic, difficulty and unseen status, with explanations, tempting-answer analysis and reusable strategies.
 - A 27-question, 41-minute Verbal simulation: 12 questions in 18 minutes, then 15 in 23 minutes. It uses fixed sections, without adaptive routing or a scaled-score estimate.
 - An error journal, confidence-based review queue, latest-attempt topic insights and a separate log for official Verbal benchmarks.
 - 12 practical strategy guides and six official-resource entries, with ETS links and access notes.
-- Five original Issue-writing prompts and a persistent timer/draft in the separate writing studio.
+- Separate Vocabulary support cards for Meaning match, Saved words and Missed words.
+- Five original Issue-writing prompts and a persistent timer/draft in the optional writing studio, available through **Settings → Open writing studio**.
 - Offline caching, interrupted-session recovery, and validated global backup import/export.
 
-The training bank and timed simulation are Verbal-only. A 170 Verbal score is a preparation goal, not a promised result. As of **24 October 2026**, the official ETS pages checked did not identify a separately announced 2027 pattern. The app uses the currently published format; see [GRE-2027-ALIGNMENT.md](GRE-2027-ALIGNMENT.md) for the dated findings, scoring boundaries and official references.
+The training bank and timed simulation are Verbal-only. A 170 Verbal score is a preparation goal, not a promised result. As of **25 October 2026**, the official ETS pages checked did not identify a separately announced 2027 pattern. The app uses the currently published format; see [GRE-2027-ALIGNMENT.md](GRE-2027-ALIGNMENT.md) for the dated findings, scoring boundaries and official references.
 
 See [SOURCE-COVERAGE.md](SOURCE-COVERAGE.md) for exact counts, provenance and unavailable sources. The ready-built [Cloudflare upload ZIP](releases/wordtrail-cloudflare.zip) contains only deployment assets.
+
+## Using Practice
+
+The chooser follows ETS's three categories: **Text Completion**, **Sentence Equivalence** and **Reading Comprehension**. Its seven subtypes are one-, two- and three-blank Text Completion; Sentence Equivalence; and Reading Comprehension with Select One Answer Choice, Select One or More Answer Choices, or Select-in-Passage. [ETS Verbal overview](https://www.ets.org/gre/test-takers/general-test/prepare/content/verbal-reasoning.html)
+
+All entry points for starting Verbal questions use the same 99-question bank and current practice runner. Today's **Text Completion** shortcut opens the setup with one-blank questions selected. Request 5, 10, 15 or 20 questions; the setup shows the actual session count after filters. If fewer questions match than requested, it uses the available count. An empty selection disables Start and offers filter or previously seen-question options.
+
+Practice remembers its active tab, filters, requested session length and unseen preference for the browser session. In a question, **Clear answer** resets an editable response. The section map distinguishes complete, incomplete and marked responses; **Next unanswered** and **Next marked** help revisit them. Saved sessions can be resumed from the hub, and starting another session asks before replacing saved answers.
+
+Expand **Vocabulary support** for word-recall activities. The optional writing studio is in Settings because Analytical Writing is a separate GRE task. Existing writing drafts and timers are retained. Older saved question sessions can still recover in their original runner; new Verbal sessions use the current runner.
 
 ## Preview
 
@@ -46,6 +57,8 @@ Open the local URL printed by Vite. The service worker runs in production builds
 ## What is stored
 
 Study progress, bookmarks, personal notes and preferences live in this browser's local storage. Verbal attempts, confidence ratings, error reasons, journal notes, target date and recorded official scores are stored there too. There is no account, remote progress database or automatic synchronization. Export progress regularly using the app's backup controls, and import that backup when moving devices or changing the deployment's domain. Safari and a separately installed home-screen app may use separate storage; install first, then use the installed app consistently.
+
+Practice tab and filter choices use session storage, so they are a convenience for the current browser session rather than part of the progress backup.
 
 The global backup includes vocabulary progress, Verbal-prep history, practice totals and the writing draft. Saved in-progress sessions remain local to the browser; importing prep progress clears the current saved prep session. A timed session's clock continues when the app is backgrounded or closed, so resuming does not grant extra time.
 

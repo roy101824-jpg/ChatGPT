@@ -1422,3 +1422,541 @@
     width: 100%;
   }
 }
+
+/* Exam question chooser and compact practice setup. */
+.prep-heading {
+  margin-bottom: 18px;
+}
+.prep-heading h1 {
+  margin: 7px 0;
+}
+.prep-stat-strip {
+  padding: 14px 20px;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.prep-stat-strip strong {
+  font-size: 23px;
+}
+.prep-stat-strip span {
+  font-size: 11px;
+}
+.prep-challenge-heading {
+  margin-top: 5px;
+}
+.prep-challenge-heading p {
+  font-size: 12px;
+  color: #697b60;
+  line-height: 1.6;
+  margin-top: 7px;
+}
+.prep-challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+.prep-challenge-card {
+  --accent: #5e7350;
+  --tint: #edf2e5;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 21px;
+  background: #fdfef9;
+  border: 1px solid #dfe7d7;
+  border-radius: 14px;
+  transition:
+    border-color 0.18s,
+    box-shadow 0.18s;
+}
+.prep-challenge-card.tc {
+  --accent: #9a653d;
+  --tint: #f6ebde;
+}
+.prep-challenge-card.se {
+  --accent: #7b679c;
+  --tint: #efebf7;
+}
+.prep-challenge-card.rc {
+  --accent: #4f7976;
+  --tint: #e5f0ed;
+}
+.prep-challenge-card.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.prep-challenge-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.prep-type-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+  width: 39px;
+  background: var(--tint);
+  color: var(--accent);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.prep-challenge-top > span:last-child {
+  font-size: 10px;
+  color: #6b7a62;
+}
+.prep-challenge-top b {
+  font-weight: 500;
+  color: var(--accent);
+}
+.prep-challenge-card h3 {
+  font-size: 18px;
+  margin: 18px 0 9px;
+  line-height: 1.4;
+  letter-spacing: -0.35px;
+}
+.prep-challenge-card > p {
+  font-size: 12px;
+  line-height: 1.75;
+  color: #63755a;
+  margin: 0 0 17px;
+}
+.prep-subtypes {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.prep-subtypes button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  background: #f7f9f3;
+  border: 1px solid #e3e9dc;
+  border-radius: 9px;
+  color: #354f3c;
+  padding: 11px 12px;
+  width: 100%;
+  min-height: 54px;
+}
+.prep-subtypes button:hover,
+.prep-subtypes button[aria-pressed="true"] {
+  background: var(--tint);
+  border-color: var(--accent);
+}
+.prep-subtypes button > span:first-child {
+  flex: 1;
+  min-width: 0;
+}
+.prep-subtypes strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.prep-subtypes small {
+  display: block;
+  font-size: 10px;
+  color: #6c7a63;
+  line-height: 1.6;
+  margin-top: 3px;
+}
+.prep-subtype-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--accent);
+  font-size: 11px;
+}
+.prep-challenge-card > .prep-card-rule {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 15px 0 0;
+  color: #6c7a62;
+}
+.prep-mix-formats {
+  margin-top: auto;
+  padding-top: 15px;
+  min-height: 44px;
+  font-size: 11px;
+  justify-content: space-between;
+  gap: 8px;
+  text-align: left;
+}
+.prep-all-types {
+  min-height: 44px;
+  margin-top: 12px;
+}
+.prep-session-builder {
+  margin-top: 22px;
+  scroll-margin-top: 100px;
+  border-radius: 12px;
+}
+.prep-session-builder:focus-visible {
+  outline: 2px solid #72915d;
+  outline-offset: 6px;
+}
+.prep-session-builder .section-title {
+  align-items: center;
+  gap: 16px;
+}
+.prep-session-builder .section-title h2 {
+  margin-top: 7px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.prep-session-builder .section-title > button {
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.prep-filters {
+  grid-template-columns: 1fr 1.3fr 1fr;
+}
+.prep-filters label {
+  min-width: 0;
+}
+.prep-filters select {
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+.prep-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 9px;
+}
+.prep-start > span {
+  font-size: 11px;
+  color: #63765a;
+  line-height: 1.6;
+}
+.prep-filter-bottom label {
+  font-size: 12px;
+}
+.prep-filter-feedback {
+  padding: 12px 14px;
+  margin: 15px 0 0;
+  background: #eef3e7;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #4b6944;
+  line-height: 1.7;
+}
+.prep-filter-feedback button {
+  min-height: 44px;
+  margin-top: 5px;
+}
+.prep-filter-panel .prep-caption {
+  font-size: 11px;
+  margin-top: 17px;
+}
+.prep-study-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 23px 0;
+}
+.prep-study-actions > button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  text-align: left;
+  background: #edf3e5;
+  color: #3d6148;
+  border: 1px solid #dce6d2;
+  border-radius: 12px;
+}
+.prep-study-actions > button > span {
+  flex: 1;
+}
+.prep-study-actions strong {
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.prep-study-actions small {
+  display: block;
+  font-size: 11px;
+  color: #6b7f5e;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+.prep-study-actions > button > svg {
+  flex-shrink: 0;
+}
+.prep-quick-grid > button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+.prep-resume {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #e9f1df;
+  border: 1px solid #c9dcbc;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+.prep-resume > div {
+  flex: 1;
+}
+.prep-resume strong {
+  font-size: 14px;
+}
+.prep-resume p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 5px;
+  color: #526e48;
+}
+.prep-resume button {
+  flex-shrink: 0;
+}
+.prep-vocabulary-tools {
+  margin-top: 28px;
+  border-top: 1px solid #dfe6d7;
+}
+.prep-vocabulary-tools > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  list-style: none;
+  padding: 22px 0;
+}
+.prep-vocabulary-tools > summary::-webkit-details-marker {
+  display: none;
+}
+.prep-vocabulary-tools > summary strong {
+  display: block;
+  font-size: 16px;
+}
+.prep-vocabulary-tools > summary small {
+  display: block;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #6b7b61;
+  margin-top: 6px;
+}
+.prep-vocabulary-tools[open] > summary > svg {
+  transform: rotate(180deg);
+}
+.prep-vocabulary-tools .practice-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.prep-vocabulary-tools .practice-card {
+  min-height: 0;
+}
+.prep-tabs button:focus-visible,
+.prep-subtypes button:focus-visible,
+.prep-vocabulary-tools > summary:focus-visible {
+  outline: 3px solid #7d985e;
+  outline-offset: 3px;
+}
+@media (max-width: 1150px) {
+  .prep-challenge-grid {
+    gap: 10px;
+  }
+  .prep-challenge-card {
+    padding: 16px;
+  }
+  .prep-challenge-top > span:last-child b {
+    display: block;
+  }
+  .prep-challenge-card h3 {
+    font-size: 16px;
+  }
+  .prep-subtypes button {
+    padding: 10px;
+  }
+  .prep-subtype-count {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .prep-challenge-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .prep-challenge-card {
+    padding: 19px;
+  }
+  .prep-challenge-card h3 {
+    font-size: 19px;
+    margin-top: 13px;
+  }
+  .prep-challenge-top > span:last-child b {
+    display: inline;
+  }
+  .prep-challenge-top > span:last-child {
+    font-size: 12px;
+  }
+  .prep-subtype-count {
+    flex-direction: row;
+  }
+  .prep-subtypes strong {
+    font-size: 13px;
+  }
+  .prep-subtypes small {
+    font-size: 11px;
+  }
+  .prep-challenge-card > p {
+    font-size: 13px;
+  }
+  .prep-mix-formats {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .prep-heading {
+    margin-bottom: 14px;
+  }
+  .prep-heading h1 {
+    font-size: 27px;
+  }
+  .prep-heading p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .prep-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 0 16px;
+    gap: 4px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+  }
+  .prep-tabs button {
+    flex-shrink: 0;
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .prep-tabs button svg {
+    width: 16px;
+    height: 16px;
+  }
+  .prep-stat-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 13px;
+    gap: 9px;
+    margin-bottom: 18px;
+  }
+  .prep-stat-strip strong {
+    font-size: 21px;
+  }
+  .prep-stat-strip span {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 3px;
+  }
+  .prep-challenge-heading h2 {
+    font-size: 19px;
+  }
+  .prep-session-builder .section-title {
+    align-items: flex-start;
+  }
+  .prep-session-builder .section-title h2 {
+    font-size: 17px;
+  }
+  .prep-session-builder .section-title .eyebrow {
+    font-size: 9px;
+  }
+  .prep-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .prep-filters label:first-child,
+  .prep-format-filter {
+    grid-column: 1/-1;
+  }
+  .prep-filters select {
+    font-size: 16px;
+  }
+  .prep-start {
+    align-items: stretch;
+  }
+  .prep-start .button {
+    min-height: 48px;
+  }
+  .prep-filter-bottom label,
+  .prep-start > span {
+    font-size: 12px;
+  }
+  .prep-study-actions {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .prep-study-actions > button {
+    padding: 17px;
+  }
+  .prep-study-actions strong {
+    font-size: 14px;
+  }
+  .prep-study-actions small {
+    font-size: 12px;
+  }
+  .prep-resume {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+  .prep-vocabulary-tools .practice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .prep-challenge-card,
+  .prep-vocabulary-tools > summary > svg {
+    transition: none;
+  }
+}
+@media (max-width: 700px) {
+  .prep-hub input:not([type="checkbox"]),
+  .prep-hub select,
+  .prep-hub textarea {
+    font-size: 16px;
+  }
+  .prep-subtypes strong {
+    font-size: 14px;
+  }
+}
+.prep-tab-short {
+  display: none;
+}
+@media (max-width: 700px) {
+  .prep-tabs {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 3px;
+    overflow: visible;
+  }
+  .prep-tabs button {
+    min-width: 0;
+    flex-direction: column;
+    gap: 5px;
+    padding: 9px 2px;
+    font-size: 10px;
+  }
+  .prep-tabs button svg {
+    width: 18px;
+    height: 18px;
+  }
+  .prep-tab-short {
+    display: inline;
+  }
+  .prep-tab-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
