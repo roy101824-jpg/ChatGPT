@@ -390,7 +390,10 @@ test("writing studio saves a draft and offers a revision checklist", async ({
 test("essay timer survives reload, pauses for later, and resets only after confirmation", async ({
   page,
 }) => {
-  await page.clock.install({ time: new Date() });
+  const timerStart = new Date("2026-10-25T12:00:00Z");
+  await page.clock.install({ time: new Date(timerStart.getTime() - 60_000) });
+  // Keep browser interaction and reload latency from consuming test seconds.
+  await page.clock.pauseAt(timerStart);
   await navigate(page, "Practice");
   await writingStudio(page);
   await page
