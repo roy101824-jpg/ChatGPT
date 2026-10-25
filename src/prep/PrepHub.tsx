@@ -1043,7 +1043,6 @@ export default function PrepHub({
           </>
         )}
       </div>
-      \n{" "}
       {run && <PrepRunner initial={run} onClose={closeRun} onGrade={grade} />}
       {pending && (
         <SessionConflictDialog

@@ -1023,12 +1023,6 @@ function App() {
           )}
           {tab === "practice" && (
             <PrepHub initialFormat={prepFocus}>
-              <div className="section-title">
-                <h2>Vocabulary support</h2>
-                <span className="muted small">
-                  Build the word knowledge behind your answers
-                </span>
-              </div>
               <div className="practice-grid">
                 <PracticeCard
                   icon={<Zap />}
